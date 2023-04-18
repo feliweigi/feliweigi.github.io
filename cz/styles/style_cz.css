@@ -1,0 +1,104 @@
+.table_dalnice  {text-align:center;vertical-align:center;border-collapse:collapse;margin-right:1px; width:80%}
+.table_dalnice td{border-color:black;border-style:solid;border-width:0.1vw;font-family:Arial, sans-serif;font-size:1vw;
+  padding:0.2vw 0.2vw;max-width: 600px;}
+.table_dalnice .table_dalnice-exit{background-color:#036400;color:#ffffff;font-weight:bold}
+.table_dalnice .table_dalnice-exit_planned{background-color:#0364007F;color:#ffffff;font-weight:bold}
+.table_dalnice .table_dalnice-tunnel{background-color:#969696;color:#000000;font-weight:normal}
+
+.table_nav {text-align:left;vertical-align:center;border-collapse:collapse;margin-right:1px; width:80%}
+.table_nav td{border-color:black;border-style:solid;border-width:0.1vw;font-family:Arial, sans-serif;font-size:1vw;
+  padding:0.2vw 0.2vw;}
+.table_nav .table_dalnice-exit{background-color:#036400;color:#ffffff;font-weight:bold}
+.table_nav .table_dalnice-exit_planned{background-color:#0364007F;color:#ffffff;font-weight:bold}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 20%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  top: 0; /* Stay at the top */
+  right: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 1px;
+}
+
+
+
+
+img.CameraImage {
+  width: 100%;
+  height: auto;
+}
+
+.dalnice{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#CD151E;}
+.dalnice_planned{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#CD151E7E;}
+.silnice{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#014A8E;}
+.silnice_planned{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#014A8E7E;}
+.eroad{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e;}
+.eroad_planned{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e7e;}
+.eroad3{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN_Eng,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e;}
+.eroad3_planned{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN_Eng,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e7e;}
+
+
+.exit_nr{color:#ffffff;font-weight:normal;font-size:0.9vw;border: 0.15vw solid white;border-radius: 2vw;padding:0.05vw 0.4vw;font-family:DIN,Arial;}
+.exit_nr_inv{color:#000000;font-weight:normal;font-size:0.9vw;border: 0.15vw solid black;border-radius: 2vw;padding:0.05vw 0.4vw;font-family:DIN,Arial;}
+
+
+
+span.border{border: 2px solid white;border-radius: 50px;padding:1px 8px;background-color:white;color:black}
+span.border_symbol{border: 3px solid red;border-radius: 20px;padding:2px 4px;background-color:#FFFFFF;color: black;font-weight:bold}
+span.border_planned{border: 2px solid #FFFFFF7F;border-radius: 50px;padding:1px 8px;background-color:#FFFFFFBF;color:black}
+span.border_symbol_planned{border: 3px solid #FF00007F;border-radius: 20px;padding:2px 4px;background-color:#FFFFFFBF;color: black;font-weight:bold}
+
+img.vms{width:100%;height: 23vh ;}
+
+.btn_toggle{
+  
+  width: auto;
+  height: 32px;
+}
+
+
+@font-face {
+  font-family: DIN;
+  src: url(../../fonts/din1451m.ttf);
+}
+
+@font-face {
+  font-family: DIN_Eng;
+  src: url(../../fonts/din1451e.ttf);
+}
+
+html {
+  scroll-behavior:smooth;
+}
+body {
+  position: relative;
+  margin: 1px
+}
+
+a{
+  text-decoration: none;
+  color:#ffffff;  
+}
+
+.scroll-container {
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 100%;
+}
+
+.scroll-container:before {
+  content: '';
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.scroll-container a {
+  position: sticky;
+  top: 97vh;
+  color:black;
+  cursor: pointer;
+  font-size: 20px;
+}

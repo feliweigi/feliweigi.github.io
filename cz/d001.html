@@ -1,0 +1,2539 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="styles/style_cz.css">
+<script type="text/javascript" src="scripts/toggleDisplay.js"></script>
+</head>
+
+<body>
+<div class="sidenav">
+<table class="table_nav" style="width:99%">
+<tbody>
+  	<tr>
+   		<td style="text-align:center">
+		<a href="#top"><img style="width:20%" src="images/D001.png" alt="back"></a>
+		</td>
+  	</tr>
+	<tr>
+		<td>
+			<button id="btn_camera" class="btn_toggle" onclick="toggleCam('camera')"><img style='opacity:1.0' src="https://dopravniinfo.cz/assets/icons/camera.png"></img> </button>
+			<button id="btn_vms" class="btn_toggle" onclick="toggleCam('vms')"><img style='opacity:1.0' src="https://dopravniinfo.cz/assets/icons/vms.png"></img> </button>
+			<button id="btn_table_dalnice-tunnel" class="btn_toggle" onclick="toggleCam('table_dalnice-tunnel')"><img style='opacity:1.0' width="32" height="32"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/AB-Tunnel.svg/32px-AB-Tunnel.svg.png"></img> </button>
+		</td>
+	</tr>
+
+
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">1</span>
+		<a href="#Spořilov">Spořilov</a>
+		(<span class="eroad">E 55</span>)
+		(<span class="eroad">E 65</span>)	
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">2</span>
+		<a href="#Chodov">Chodov</a>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">6</span>
+		<a href="#Průhonice">Průhonice</a>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">8</span>
+		<a href="#Čestlice">Čestlice</a>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">10</span>
+		<a href="#Modletice">Modletice</a>
+		<a href="d000.html"><span class="dalnice">0</span></a>
+		(<span class="eroad">E 50</span>)
+		<span class="silnice">101</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">15</span>
+		<a href="#Všechromy">Všechromy</a>
+		<span class="silnice">107</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">21</span>
+		<a href="#Mirošovice">Mirošovice</a>
+		<a href="s003.html"><span class="silnice">3</span></a>
+		(<span class="eroad">E 55</span>)
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">29</span>
+		<a href="#Hvězdonice">Hvězdonice</a>
+		<span class="silnice">109</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">34</span>
+		<a href="#Ostředek">Ostředek</a>
+		<span class="silnice">110</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">41</span>
+		<a href="#Šternov">Šternov</a>
+		<span class="silnice">111</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">49</span>
+		<a href="#Psáře">Psáře</a>
+		<span class="silnice">125</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">56</span>
+		<a href="#Soutice">Soutice</a>
+		<span class="silnice">126</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">66</span>
+		<a href="#Loket">Loket</a>
+		<span class="silnice">150</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">75</span>
+		<a href="#Hořice">Hořice</a>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">81</span>
+		<a href="#Koberovice">Koberovice</a>
+		<span class="silnice">130</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">90</span>
+		<a href="#Humpolec">Humpolec</a>
+		<span class="silnice">34</span>
+		(<span class="eroad">E 551</span>)
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">104</span>
+		<a href="#Větrný Jeníkov">Větrný Jeníkov</a>
+		<span class="silnice">131</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">112</span>
+		<a href="#Jihlava">Jihlava</a>
+		<span class="silnice">38</span>
+		(<span class="eroad">E 59</span>)
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">119</span>
+		<a href="#Velký Beranov">Velký Beranov</a>
+		<span class="silnice">353</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">134</span>
+		<a href="#Měřín">Měřín</a>
+		<span class="silnice">348</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">141</span>
+		<a href="#Velké Meziříčí-západ">Velké Meziříčí-západ</a>
+		<span class="silnice">602</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">146</span>
+		<a href="#Velké Meziříčí-východ">Velké Meziříčí-východ</a>
+		<span class="silnice">602</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">153</span>
+		<a href="#Lhotka">Lhotka</a>
+		<span class="silnice">348</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">162</span>
+		<a href="#Velká Bíteš">Velká Bíteš</a>
+		<span class="silnice">37</span>
+		<span class="silnice">399</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">168</span>
+		<a href="#Devět Křížů">Devět Křížů</a>
+		<span class="silnice">602</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">178</span>
+		<a href="#Ostrovačice">Ostrovačice</a>
+		<span class="silnice">386</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">182</span>
+		<a href="#Kývalka">Kývalka</a>
+		<span class="silnice">23</span>
+		<span class="silnice">602</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">190</span>
+		<a href="#Brno-západ">Brno-západ</a>
+		<span class="silnice">23</span>
+		(<span class="eroad">E 461</span>)
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">194</span>
+		<a href="#Brno-centrum">Brno-centrum</a>
+		<span class="silnice">52</span>
+		(<span class="eroad">E 461</span>)
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">196</span>
+		<a href="#Brno-jih">Brno-jih</a>
+		<a href="d002.html"><span class="dalnice">2</span></a>
+		(<span class="eroad">E 65</span>)
+	</td> 
+</tr>
+
+</tbody>
+</table>
+</div>
+
+
+<table class="table_dalnice">
+<tbody>
+  <tr>
+    <td class="table_dalnice-baqh" colspan="3">
+		<a href="cz_index.html"><img style="width:20%" src="https://upload.wikimedia.org/wikipedia/commons/0/05/CZ_traffic_sign_IS16a_-_D1.svg" alt="D1"></a>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		Richtung Polen
+	</td>
+    <td class="table_dalnice-baqh">
+		km
+	</td>
+    <td class="table_dalnice-baqh">
+		Richtung Praha
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3" id="Spořilov">
+		<span class="exit_nr">1</span>
+		Spořilov	
+		(<span class="eroad">E 55</span>)
+		(<span class="eroad">E 65</span>)	
+	</td>
+  </tr> 
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2146">
+	</td>
+    <td class="table_dalnice-baqh">
+		0,4
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td id="Chodov" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">2</span>
+		Chodov
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2148">
+	</td>
+    <td class="table_dalnice-baqh">
+		2,3
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3549">
+	</td>
+    <td class="table_dalnice-baqh">
+		4,5	<br>
+		<--		<br><br>
+		6,1	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2149">
+	</td>
+  </tr>
+  <tr>
+    <td id="Průhonice" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">6</span>
+		Průhonice
+	</td>
+  </tr>
+  <tr class="vms">
+    <td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=100">
+	</td>
+    <td>
+		7,7	<br>
+		<--		<br><br>
+		7,9	<br>
+		-->
+	</td>
+    <td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=161">
+	</td>
+  </tr>
+  <tr>
+    <td id="Čestlice" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">8</span>
+		Čestlice
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2152">
+	</td>
+    <td class="table_dalnice-baqh">
+		10,3	<br>
+		<--		<br><br>
+		9,7	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2151">
+	</td>
+  </tr>  
+  <tr>
+    <td id="Modletice" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">10</span>
+		<span class="exit_nr">12</span>
+		Modletice
+		<a href="d000.html"><span class="dalnice">0</span></a>
+		<span class="silnice">101</span>
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		11,0
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2153">
+	</td>
+  </tr> 
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		11,8
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2154">
+	</td>
+  </tr> 
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		15,4
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2156">
+	</td>
+  </tr>
+  <tr>
+    <td id="Všechromy" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">15</span>
+		Všechromy
+		<span class="silnice">107</span>
+	</td>
+  </tr>
+  <tr class="vms">
+    <td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=258">
+	</td>
+    <td>
+		16,4	<br>
+		<--		<br><br>
+		18,8	<br>
+		-->
+	</td>
+    <td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=259">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2158">
+	</td>
+    <td class="table_dalnice-baqh">
+		18,1	<br>
+		<--		<br><br>
+		20,8	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2159">
+	</td>
+  </tr> 
+  <tr>
+    <td id="Mirošovice" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">21</span>
+		Mirošovice
+		<span class="silnice">3</span>
+		(<span class="eroad">E 55</span>)
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3754">
+	</td>
+    <td class="table_dalnice-baqh">
+		21,5
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3755">
+	</td>
+    <td class="table_dalnice-baqh">
+		23,0
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="vms">
+    <td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=369">
+	</td>
+    <td>
+		24,5
+	</td>
+    <td>
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3756">
+	</td>
+    <td class="table_dalnice-baqh">
+		24,9
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>  
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3757">
+	</td>
+    <td class="table_dalnice-baqh">
+		26,6	<br>
+		<--		<br><br>
+		28,5	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3758">
+	</td>
+  </tr>
+  <tr class="vms">
+    <td>
+		---
+	</td>
+    <td>
+		28,9
+	</td>
+    <td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=368">
+	</td>
+  </tr>
+  <tr>
+    <td id="Hvězdonice" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">29</span>
+		Hvězdonice
+		<span class="silnice">109</span>
+	</td>
+  </tr>
+  <tr class="vms">
+    <td>
+		---
+	</td>
+    <td>
+		31,2
+	</td>
+    <td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=287">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2164">
+	</td>
+    <td class="table_dalnice-baqh">
+		32,9	<br>
+		<--		<br><br>
+		29,8	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2161">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2169">
+	</td>
+    <td class="table_dalnice-baqh">
+		34,0
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  <tr>
+    <td id="Ostředek" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">34</span> Ostředek
+		<span class="silnice">110</span>
+	</td>
+  </tr>
+</tr>
+<tr class="vms">
+  <td>
+	  <img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=326">
+  </td>
+  <td>
+	  34,9
+  </td>
+  <td>
+	  ---
+  </td>
+</tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		34,6
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3059">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3061">
+	</td>
+    <td class="table_dalnice-baqh">
+		38,8	<br>
+		<--		<br><br>
+		36,9	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3060">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3062">
+	</td>
+    <td class="table_dalnice-baqh">
+		40,4
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td id="Šternov" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">41</span>
+		Šternov
+		<span class="silnice">111</span>
+	</td>
+  </tr> 
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=102">
+	</td>
+	<td>
+		43,5	<br>
+		<--		<br><br>
+		43,6	<br>
+		-->
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=115">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3601">
+	</td>
+    <td class="table_dalnice-baqh">
+		46,0
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2848">
+	</td>
+    <td class="table_dalnice-baqh">
+		48,9	<br>
+		<--		<br><br>
+		48,5	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2970">
+	</td>
+  </tr> 
+  <tr>
+    <td id="Psáře" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">49</span>
+		Psáře
+		<span class="silnice">125</span>
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2849">
+	</td>
+    <td class="table_dalnice-baqh">
+		50,3	<br>
+		<-- 	<br><br>
+		52,3	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2893">
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=304">
+	</td>
+	<td>
+		53,9	<br>
+		<--		<br><br>
+		54,7	<br>
+		-->
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=303">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		54,7
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2850">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2851">
+	</td>
+    <td class="table_dalnice-baqh">
+		56,0
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+   <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span id="Soutice" class="exit_nr">56</span>
+		Soutice
+		<span class="silnice">126</span>
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3602">
+	</td>
+    <td class="table_dalnice-baqh">
+		58,1	<br>
+		<-- 	<br><br>
+		60,0	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3603">
+	</td>
+  </tr> 
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=354">
+	</td>
+	<td>
+		61,1
+	</td>
+	<td>
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3604">
+	</td>
+    <td class="table_dalnice-baqh">
+		62,0	<br>
+		<-- 	<br><br>
+		64,1	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3605">
+	</td>
+  </tr> 
+  <tr class="vms">
+	<td>
+		---
+	</td>
+	<td>
+		64,1
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=355">
+	</td>
+  </tr> 
+   <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span id="Loket" class="exit_nr">66</span>
+		Loket
+		<span class="silnice">150</span>
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3050">
+	</td>
+    <td class="table_dalnice-baqh">
+		66,6
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2207">
+	</td>
+    <td class="table_dalnice-baqh">
+		68,6
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3759">
+		Odpočívka Studený
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3608">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=4071">		
+	</td>
+    <td class="table_dalnice-baqh">
+		70,3	<br>
+		<-- 	<br><br>
+		74,2	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2971">
+	</td>
+  </tr>  
+   <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span id="Hořice" class="exit_nr">75</span>
+		Hořice
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3063">
+	</td>
+    <td class="table_dalnice-baqh">
+		76,7
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=324">
+	</td>
+	<td>
+		77,2
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=325">
+	</td>
+  </tr> 
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		81,1
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3219">
+	</td>
+  </tr>  
+   <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span id="Koberovice" class="exit_nr">81</span>
+		Koberovice
+		<span class="silnice">130</span>
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3760">
+	</td>
+    <td class="table_dalnice-baqh">
+		82,9
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3761">
+	</td>
+    <td class="table_dalnice-baqh">
+		84,9	<br>
+		<-- 	<br><br>
+		86,8	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3763">
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=366">
+	</td>
+	<td>
+		88,9	<br>
+		<-- 	<br><br>
+		88,1	<br>
+		-->
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=365">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3763">
+	</td>
+    <td class="table_dalnice-baqh">
+		88,9
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3764">
+	</td>
+    <td class="table_dalnice-baqh">
+		90,9
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td id="Humpolec" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">90</span>
+		Humpolec
+		<span class="silnice">34</span>
+		(<span class="eroad">E 551</span>)
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3766">
+	</td>
+    <td class="table_dalnice-baqh">
+		95,8	<br>
+		<-- 	<br><br>
+		93,6	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3765">
+	</td>
+  </tr>  
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=361">
+	</td>
+	<td>
+		96,7	<br>
+		<-- 	<br><br>
+		96,3	<br>
+		-->
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=362">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3929">
+	</td>
+    <td class="table_dalnice-baqh">
+		96,7
+		<br>
+		<-- 	<br><br>
+		97,6	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3767">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3768">
+	</td>
+    <td class="table_dalnice-baqh">
+		99,5
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr> 
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2226">
+	</td>
+    <td class="table_dalnice-baqh">
+		101,4
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=363">
+	</td>
+	<td>
+		102,1	<br>
+		<-- 	<br><br>
+		103,2	<br>
+		-->
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=364">
+	</td>
+  </tr>  
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		103,2
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3753">
+	</td>
+  </tr>
+  <tr>
+    <td id="Větrný Jeníkov" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">104</span>
+		Větrný Jeníkov
+		<span class="silnice">131</span>
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2227">
+	</td>
+    <td class="table_dalnice-baqh">
+		105,5
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr> 
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3557">
+	</td>
+    <td class="table_dalnice-baqh">
+		107,3	<br>
+		<-- 	<br><br>
+		109,3	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3581">
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=105">
+	</td>
+	<td>
+		110,3
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=118">
+	</td>
+  </tr> 
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		112,7
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3559">
+	</td>
+  </tr> 
+  <tr>	
+    <td id="Jihlava" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">112</span>
+		Jihlava
+		<span class="silnice">38</span>
+		(<span class="eroad">E 59</span>)
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3093">
+	</td>
+    <td class="table_dalnice-baqh">
+		115,4
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>  
+  <tr class="vms">
+	<td>
+		---
+	</td>
+	<td>
+		115,9
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=300">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3096">
+	</td>
+    <td class="table_dalnice-baqh">
+		119,2
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>   
+  <tr>
+    <td id="Velký Beranov" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">119</span>
+		Velký Beranov
+		<span class="silnice">353</span>
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3770">
+	</td>
+    <td class="table_dalnice-baqh">
+		122,4	<br>
+		<-- 	<br><br>
+		120,5	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3769">
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=106">
+	</td>
+	<td>
+		122,4	<br>
+		<-- 	<br><br>
+		124,0	<br>
+		-->
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=88">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		124,0
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3771">
+	</td>
+  </tr>   
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3774">
+	</td>
+    <td class="table_dalnice-baqh">
+		132,1	<br>
+		<-- 	<br><br>
+		127,8	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3772">
+	</td>
+  </tr> 
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=370">
+	</td>
+	<td>
+		132,1
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=371">
+	</td>
+  </tr>   
+  <tr>
+    <td id="Měřín" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">134</span>
+		Měřín
+		<span class="silnice">348</span>
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2900">
+	</td>
+    <td class="table_dalnice-baqh">
+		136,8	<br>
+		<-- 	<br><br>
+		134,8	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2899">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		139,3
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2901">
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=107">
+	</td>
+	<td>
+		139,3
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=119">
+	</td>
+  </tr> 
+  <tr>
+    <td id="Velké Meziříčí-západ" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">141</span>
+		Velké Meziříčí-západ
+		<span class="silnice">602</span>
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3650">
+	</td>
+    <td class="table_dalnice-baqh">
+		143,0
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2254">
+	</td>
+    <td class="table_dalnice-baqh">
+		144,0
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3651">
+	</td>
+    <td class="table_dalnice-baqh">
+		144,8	<br>
+		<-- 	<br><br>
+		145,8	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3652">
+	</td>
+  </tr>
+  <tr>
+    <td id="Velké Meziříčí-východ" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">146</span>
+		Velké Meziříčí-východ
+		<span class="silnice">602</span>
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=4063">
+	</td>
+    <td class="table_dalnice-baqh">
+		147,8
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr> 
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3099">
+	</td>
+    <td class="table_dalnice-baqh">
+		151,6
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=87">
+	</td>
+	<td>
+		151,6
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=120">
+	</td>
+  </tr>
+  <tr>
+    <td id="Lhotka" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">153</span>
+		Lhotka
+		<span class="silnice">390</span>
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2264">
+	</td>
+    <td class="table_dalnice-baqh">
+		154,2
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2270">
+	</td>
+    <td class="table_dalnice-baqh">
+		160,1
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2968">
+	</td>
+    <td class="table_dalnice-baqh">
+		161,7
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td id="Velká Bíteš" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">162</span>
+		Velká Bíteš
+		<span class="silnice">37</span>
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=108">
+	</td>
+	<td>
+		163,1
+	</td>
+	<td>
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3653">
+	</td>
+    <td class="table_dalnice-baqh">
+		164,9	<br>
+		<-- 	<br><br>
+		163,4	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2272">
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		---
+	</td>
+	<td>
+		165,7
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=121">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		166,6
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2273">
+	</td>
+  </tr>
+  <tr>
+    <td id="Devět Křížů" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">168</span>
+		Devět Křížů
+		<span class="silnice">602</span>
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=4064">
+	</td>
+    <td class="table_dalnice-baqh">
+		168,9	<br>
+		<-- 	<br><br>
+		171,1	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3775">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		173,3
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3776">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		175,2
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=4065">
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=367">
+	</td>
+	<td>
+		177,2
+	</td>
+	<td>
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		177,5
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2274">
+	</td>
+  </tr>
+  <tr>
+    <td id="Ostrovačice" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">178</span>
+		Ostrovačice
+		<span class="silnice">386</span>
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2275">
+	</td>
+    <td class="table_dalnice-baqh">
+		179,9
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		---
+	</td>
+	<td>
+		180,0
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=86">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2276">
+	</td>
+    <td class="table_dalnice-baqh">
+		181,7
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">182</span>
+		Kývalka
+		<span class="silnice">23</span>
+		<span class="silnice">602</span>
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=110">
+	</td>
+	<td>
+		185,0
+	</td>
+	<td>
+		---
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		185,1
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2277">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2278">
+	</td>
+    <td class="table_dalnice-baqh">
+		188,0
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2279">
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		190,0
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=4022">
+	</td>
+  </tr>
+  <tr>
+    <td id="Brno-západ" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">190</span>
+		Brno-západ
+		<span class="silnice">23</span>
+		(<span class="eroad">E 461</span>)
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2281">
+	</td>
+    <td class="table_dalnice-baqh">
+		191,1
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=158">
+	</td>
+	<td>
+		191,3
+	</td>
+	<td>
+		---
+	</td>
+  </tr>  
+  <tr class="camera"> 
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		194,0
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2282">
+	</td>
+  </tr>
+  <tr>
+    <td id="Brno-centrum" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">194</span>
+		Brno-centrum
+		<span class="silnice">52</span>
+		(<span class="eroad">E 461</span>)
+	</td>
+  </tr>
+  <tr class="camera">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2283">
+	</td>
+    <td class="table_dalnice-baqh">
+		196,0
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td id="Brno-jih" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">196</span>
+		Brno-jih
+		<a href="d002.html"><span class="dalnice">2</span></a>
+		(<span class="eroad">E 65</span>)
+		<span class="silnice">41</span>
+	</td>
+  </tr>
+  <tr>
+    <td id="Brno-slatina" class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">201</span>
+		Brno-slatina
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		201,3
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2285">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		203,7
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3051">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">203</span>
+		Brno-východ
+		<span class="silnice2">50</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3052">
+	</td>
+    <td class="table_dalnice-baqh">
+		210,6
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">210</span>
+		Holubice
+		<span class="silnice2">50</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2290">
+	</td>
+    <td class="table_dalnice-baqh">
+		214,6
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">216</span>
+		Rousínov
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2292">
+	</td>
+    <td class="table_dalnice-baqh">
+		220,3	<br>
+		<-- 	<br><br>
+		223,2	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2293">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		226,0
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2294">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">226</span>
+		Vyškov-západ
+		<span class="silnice3">430</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2295">
+	</td>
+    <td class="table_dalnice-baqh">
+		226,6
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2296">
+	</td>
+    <td class="table_dalnice-baqh">
+		230,0
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">230</span>
+		Vyškov-východ
+		<span class="dalnice2">46</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2297">
+	</td>
+    <td class="table_dalnice-baqh">
+		231,0	<br>
+		<-- 	<br><br>
+		233,2	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2298">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		236,0
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2299">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">236</span>
+		Ivanovice na Hané
+		<span class="silnice3">428</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3017">
+	</td>
+    <td class="table_dalnice-baqh">
+		237,5
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">244</span>
+		Mořice
+		<span class="silnice3">433</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2302">
+	</td>
+    <td class="table_dalnice-baqh">
+		245,5
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2303">	<br><br>
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2304">
+	</td>
+    <td class="table_dalnice-baqh">
+		249,1
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2305">
+	</td>
+    <td class="table_dalnice-baqh">
+		251,1
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2306">
+	</td>
+    <td class="table_dalnice-baqh">
+		253,2
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">253</span>
+		Kojetín
+		<span class="silnice3">367</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2308">
+	</td>
+    <td class="table_dalnice-baqh">
+		256,5	<br>
+		<-- 	<br><br>
+		254,8	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2903">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2309">
+	</td>
+    <td class="table_dalnice-baqh">
+		257,9
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">258</span>
+		Kroměříž-západ
+		<span class="silnice3">367</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2310">
+	</td>
+    <td class="table_dalnice-baqh">
+		258,9
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2311">
+	</td>
+    <td class="table_dalnice-baqh">
+		260,4
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">260</span>
+		Kroměříž-východ
+		<span class="silnice2">47</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2312">
+	</td>
+    <td class="table_dalnice-baqh">
+		264,0
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">264</span>
+		Hulín-západ
+		<span class="silnice2">55</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2313">
+	</td>
+    <td class="table_dalnice-baqh">
+		264,8	<br>
+		<-- 	<br><br>
+		265,8	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2314">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">265</span>
+		Hulín
+		<span class="dalnice2_planned">49</span>
+		<span class="dalnice2">55</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2315">
+	</td>
+    <td class="table_dalnice-baqh">
+		268,0
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">272</span>
+		Říkovice
+		<span class="silnice2">55</span>
+	</td>
+  <tr>
+    <td class="table_dalnice-exit_planned" colspan="3">
+		<span class="exit_nr">278</span>
+		Přerov–západ
+		<span style="border: 2px solid white;border-radius: 5px;padding:1px 8px;background-color:#0000FF7F">434</span>
+	</td>
+  <tr>
+    <td class="table_dalnice-exit_planned" colspan="3">
+		<span class="exit_nr">281</span>
+		Přerov–sever
+		<span class="dalnice2_planned">55</span>
+	</td>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		Přerov–Žernov
+		<span class="silnice2">55</span>
+	</td>
+  </tr>	
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">294</span>
+		Lipník nad Bečvou
+		<span class="silnice3">437</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2317">
+	</td>
+    <td class="table_dalnice-baqh">
+		296,6	<br>
+		<-- 	<br><br>
+		296,3	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2560">
+	</td>
+  </tr>  
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">296</span>
+		Lipník nad Bečvou
+		<span class="dalnice2">35</span>
+		<span class="silnice2">35</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2318">
+	</td>
+    <td class="table_dalnice-baqh">
+		298,4	<br>
+		<-- 	<br><br>
+		302,1	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2319">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2321">
+	</td>
+    <td class="table_dalnice-baqh">
+		305,8	<br>
+		<-- 	<br><br>
+		303,8	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2320">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2323">
+	</td>
+    <td class="table_dalnice-baqh">
+		308,1	<br>
+		<-- 	<br><br>
+		306,3	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2322">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">308</span>
+		Hranice
+		<span class="silnice3">440</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		310,2
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2324">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		311,4
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2325">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">311</span>
+		Bělotín
+		<span class="dalnice2">48</span>
+	</td>
+  </tr>	
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2326">
+	</td>
+    <td class="table_dalnice-baqh">
+		312,4
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2327">
+	</td>
+    <td class="table_dalnice-baqh">
+		317,9
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2328">
+	</td>
+    <td class="table_dalnice-baqh">
+		319,0	<br>
+		<-- 	<br><br>
+		320,8	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2329">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		321,1
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2330">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">321</span>
+		Mankovice
+		<span class="silnice3">441</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3104">
+	</td>
+    <td class="table_dalnice-baqh">
+		324,2
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2331">
+	</td>
+    <td class="table_dalnice-baqh">
+		328,2
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">330</span>
+		Hladké Životice
+		<span class="silnice2">57</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2332">
+	</td>
+    <td class="table_dalnice-baqh">
+		331,6	<br>
+		<-- 	<br><br>
+		335,4	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2333">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">336</span>
+		Butovice
+		<span class="silnice3">464</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2334">
+	</td>
+    <td class="table_dalnice-baqh">
+		339,4
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>  
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2336">
+	</td>
+    <td class="table_dalnice-baqh">
+		342,2
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">342</span>
+		Bravantice
+		<span class="silnice3">647</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2337">
+	</td>
+    <td class="table_dalnice-baqh">
+		343,2
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2338">
+	</td>
+    <td class="table_dalnice-baqh">
+		344,7
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2339">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3451">
+	</td>
+    <td class="table_dalnice-baqh">
+		345,6
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>  
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2340">
+	</td>
+    <td class="table_dalnice-baqh">
+		346,2
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr class="table_dalnice-tunnel">
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3385">
+	</td>
+    <td class="table_dalnice-baqh">
+		346,61
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3384">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3398">
+	</td>
+    <td class="table_dalnice-baqh">
+		346,99
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3399">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3413">
+	</td>
+    <td class="table_dalnice-baqh">
+		347,39	<br>
+		<-- 	<br><br>
+		347,40	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3414">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3428">
+	</td>
+    <td class="table_dalnice-baqh">
+		347,78
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3427">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		347,9
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2327">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		348,6
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3452">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">349</span>
+		Klimkovice
+		<span class="silnice3">647</span>
+	</td>
+  </tr> 
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2342">
+	</td>
+    <td class="table_dalnice-baqh">
+		352,0
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr> 
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2343">
+	</td>
+    <td class="table_dalnice-baqh">
+		354,4
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>  
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">354</span>
+		Ostrava-Rudná
+		<span class="silnice2">11</span>
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+    <td class="table_dalnice-baqh">
+		357,0
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2345">
+	</td>
+  </tr>  
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">357</span>
+		Ostrava-Severní spoj
+		<span class="silnice3">470</span>
+	</td>
+  </tr>  
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2346">
+	</td>
+    <td class="table_dalnice-baqh">
+		359,9
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2347">
+	</td>
+    <td class="table_dalnice-baqh">
+		361,5
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">361</span>
+		Ostrava-Místecká
+		<span class="silnice2">56</span>
+	</td>
+  </tr> 
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2348">
+	</td>
+    <td class="table_dalnice-baqh">
+		363,1
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">365</span>
+		Vrbice
+		<span class="silnice3">647</span>
+	</td>
+  </tr> 
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2349">
+	</td>
+    <td class="table_dalnice-baqh">
+		366,2
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2350">
+	</td>
+    <td class="table_dalnice-baqh">
+		366,8
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2969">
+	</td>
+    <td class="table_dalnice-baqh">
+		367,9	<br>
+		<-- 	<br><br>
+		368,4	<br>
+		-->
+	</td>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2972">
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2351">
+	</td>
+    <td class="table_dalnice-baqh">
+		369,3
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-baqh">
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2353">
+	</td>
+    <td class="table_dalnice-baqh">
+		372,4
+	</td>
+    <td class="table_dalnice-baqh">
+		---
+	</td>
+  </tr>
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">370</span>
+		Bohumin
+		<span class="silnice2">67</span>
+		<span class="silnice3">647</span>
+	</td>
+  </tr>   
+  <tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span style="border: 3px solid red;border-radius: 20px;padding:2px 4px;background-color:#FFFFFF;color: black;font-weight:bold">—</span>
+		Grenze
+		<span style="border: 2px solid white;border-radius: 50px;padding:1px 8px;background-color:white;color:black">CZ</span> /
+		<span style="border: 2px solid white;border-radius: 50px;padding:1px 8px;background-color:white;color:black">PL</span>
+		<span class="dalnice2">A1</span>
+		
+	</td>
+  </tr>  
+ 
+</tbody>
+</table> 
+
+
+
+</body>
+
+
+</html>
