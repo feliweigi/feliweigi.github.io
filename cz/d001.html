@@ -1,5 +1,4 @@
 <html>
-
 <head>
 <link rel="stylesheet" href="styles/style_cz.css">
 <script type="text/javascript" src="scripts/toggleDisplay.js"></script>
@@ -240,6 +239,119 @@
 		(<span class="eroad">E 65</span>)
 	</td> 
 </tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">201</span>
+		<a href="#Brno-slatina">Brno-slatina</a>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">203</span>
+		<a href="#Brno-východ">Brno-východ</a>
+		<span class="silnice">50</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">210</span>
+		<a href="#Holubice">Holubice</a>
+		<span class="silnice">50</span>
+		(<span class="eroad">E 50</span>)
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">216</span>
+		<a href="#Rousínov">Rousínov</a>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">226</span>
+		<a href="#Vyškov-západ">Vyškov-západ</a>
+		<span class="silnice">430</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">230</span>
+		<a href="#Vyškov-východ">Vyškov-východ</a>
+		<a href="d046.html"><span class="dalnice">46</span></a>
+		(<span class="eroad3">E 462</span>)
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">236</span>
+		<a href="#Ivanovice na Hané">Ivanovice na Hané</a>
+		<span class="silnice">428</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">244</span>
+		<a href="#Mořice">Mořice</a>
+		<span class="silnice">433</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">253</span>
+		<a href="#Kojetín">Kojetín</a>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">258</span>
+		<a href="#Kroměříž-západ">Kroměříž-západ</a>
+		<span class="silnice">47</span>
+		<span class="silnice">367</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">260</span>
+		<a href="#Kroměříž-východ">Kroměříž-východ</a>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">264</span>
+		<a href="#Hulín-západ">Hulín-západ</a>
+		<span class="silnice">55</span>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit">
+		<span class="exit_nr">265</span>
+		<a href="#Hulín">Hulín</a>
+		<a href="d049.html"><span class="dalnice_planned">49</span></a>
+		<a href="d055.html"><span class="dalnice">55</span></a>
+	</td> 
+</tr>
+<tr>
+    <td class="table_dalnice-exit" colspan="3">
+		<span class="exit_nr">272</span>
+		<a href="#Říkovice">Říkovice</a>
+		<span class="silnice">55</span>
+	</td>
+</tr>
+<tr>
+    <td class="table_dalnice-exit_planned" colspan="3">
+		<span class="exit_nr">278</span>
+		<a href="#Přerov–západ">Přerov–západ</a>
+		<span class="silnice_planned">434</span>
+	</td>
+  <tr>
+    <td class="table_dalnice-exit_planned" colspan="3">
+		<span class="exit_nr">281</span>
+		<a href="#Přerov–sever">Přerov–sever</a>
+		<a href="d055.html"><span class="dalnice_planned">55</span></a>
+		<span class="silnice_planned">55</span>
+	</td>
+  <tr>
+
 
 </tbody>
 </table>
@@ -1633,7 +1745,7 @@
 		Brno-slatina
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		---
 	</td>
@@ -1644,7 +1756,18 @@
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2285">
 	</td>
   </tr>
-  <tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=111">
+	</td>
+	<td>
+		201,8
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=122">
+	</td>
+  </tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		---
 	</td>
@@ -1656,13 +1779,24 @@
 	</td>
   </tr>
   <tr>
-    <td class="table_dalnice-exit" colspan="3">
+    <td id="Brno-východ" class="table_dalnice-exit" colspan="3">
 		<span class="exit_nr">203</span>
 		Brno-východ
-		<span class="silnice2">50</span>
+		<span class="silnice">50</span>
 	</td>
   </tr>
-  <tr>
+  <tr class="vms">
+	<td>
+		---
+	</td>
+	<td>
+		207,7
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=123">
+	</td>
+  </tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3052">
 	</td>
@@ -1674,13 +1808,13 @@
 	</td>
   </tr>
   <tr>
-    <td class="table_dalnice-exit" colspan="3">
+    <td id="Holubice" class="table_dalnice-exit" colspan="3">
 		<span class="exit_nr">210</span>
 		Holubice
-		<span class="silnice2">50</span>
+		<span class="silnice">50</span>
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2290">
 	</td>
@@ -1692,12 +1826,26 @@
 	</td>
   </tr>
   <tr>
-    <td class="table_dalnice-exit" colspan="3">
+    <td id="Rousínov" class="table_dalnice-exit" colspan="3">
 		<span class="exit_nr">216</span>
 		Rousínov
 	</td>
   </tr>
-  <tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=154">
+	</td>
+	<td>
+		217,9	<br>
+		<-- 	<br><br>
+		217,5	<br>
+		-->
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=157">
+	</td>
+  </tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2292">
 	</td>
@@ -1711,7 +1859,7 @@
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2293">
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		---
 	</td>
@@ -1723,13 +1871,24 @@
 	</td>
   </tr>
   <tr>
-    <td class="table_dalnice-exit" colspan="3">
+    <td id="Vyškov-západ" class="table_dalnice-exit" colspan="3">
 		<span class="exit_nr">226</span>
 		Vyškov-západ
-		<span class="silnice3">430</span>
+		<span class="silnice">430</span>
 	</td>
   </tr>
-  <tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=176">
+	</td>
+	<td>
+		226,4
+	</td>
+	<td>
+		---
+	</td>
+  </tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2295">
 	</td>
@@ -1740,7 +1899,7 @@
 		---
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2296">
 	</td>
@@ -1752,13 +1911,14 @@
 	</td>
   </tr>
   <tr>
-    <td class="table_dalnice-exit" colspan="3">
+    <td id="Vyškov-východ" class="table_dalnice-exit" colspan="3">
 		<span class="exit_nr">230</span>
 		Vyškov-východ
-		<span class="dalnice2">46</span>
+		<a href="d046.html"><span class="dalnice">46</span></a>
+		(<span class="eroad3">E 462</span>)
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2297">
 	</td>
@@ -1772,7 +1932,18 @@
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2298">
 	</td>
   </tr>
-  <tr>
+  <tr class="vms">
+	<td>
+		---
+	</td>
+	<td>
+		233,0
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=177">
+	</td>
+  </tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		---
 	</td>
@@ -1784,13 +1955,13 @@
 	</td>
   </tr>
   <tr>
-    <td class="table_dalnice-exit" colspan="3">
+    <td id="Ivanovice na Hané" class="table_dalnice-exit" colspan="3">
 		<span class="exit_nr">236</span>
 		Ivanovice na Hané
-		<span class="silnice3">428</span>
+		<span class="silnice">428</span>
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=3017">
 	</td>
@@ -1802,13 +1973,13 @@
 	</td>
   </tr>
   <tr>
-    <td class="table_dalnice-exit" colspan="3">
+    <td id="Mořice" class="table_dalnice-exit" colspan="3">
 		<span class="exit_nr">244</span>
 		Mořice
-		<span class="silnice3">433</span>
+		<span class="silnice">433</span>
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2302">
 	</td>
@@ -1819,7 +1990,7 @@
 		---
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2303">	<br><br>
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2304">
@@ -1831,7 +2002,7 @@
 		---
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2305">
 	</td>
@@ -1842,7 +2013,7 @@
 		---
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2306">
 	</td>
@@ -1854,13 +2025,24 @@
 	</td>
   </tr>
   <tr>
-    <td class="table_dalnice-exit" colspan="3">
+    <td id="Kojetín" class="table_dalnice-exit" colspan="3">
 		<span class="exit_nr">253</span>
 		Kojetín
-		<span class="silnice3">367</span>
+		<span class="silnice">367</span>
 	</td>
   </tr>
-  <tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=112">
+	</td>
+	<td>
+		254,7
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=124">
+	</td>
+  </tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2308">
 	</td>
@@ -1874,7 +2056,7 @@
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2903">
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2309">
 	</td>
@@ -1886,13 +2068,13 @@
 	</td>
   </tr>
   <tr>
-    <td class="table_dalnice-exit" colspan="3">
+    <td id="Kroměříž-západ" class="table_dalnice-exit" colspan="3">
 		<span class="exit_nr">258</span>
 		Kroměříž-západ
-		<span class="silnice3">367</span>
+		<span class="silnice">367</span>
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2310">
 	</td>
@@ -1903,7 +2085,7 @@
 		---
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2311">
 	</td>
@@ -1915,13 +2097,24 @@
 	</td>
   </tr>
   <tr>
-    <td class="table_dalnice-exit" colspan="3">
+    <td id="Kroměříž-východ" class="table_dalnice-exit" colspan="3">
 		<span class="exit_nr">260</span>
 		Kroměříž-východ
-		<span class="silnice2">47</span>
+		<span class="silnice">47</span>
 	</td>
   </tr>
-  <tr>
+  <tr class="vms">
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=192">
+	</td>
+	<td>
+		261,8
+	</td>
+	<td>
+		<img class="vms" src="https://api.dopravniinfo.cz/VmsImage.ashx?vms=191">
+	</td>
+  </tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2312">
 	</td>
@@ -1933,13 +2126,13 @@
 	</td>
   </tr>
   <tr>
-    <td class="table_dalnice-exit" colspan="3">
+    <td id="Hulín-západ" class="table_dalnice-exit" colspan="3">
 		<span class="exit_nr">264</span>
 		Hulín-západ
-		<span class="silnice2">55</span>
+		<span class="silnice">55</span>
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2313">
 	</td>
@@ -1954,41 +2147,45 @@
 	</td>
   </tr>
   <tr>
-    <td class="table_dalnice-exit" colspan="3">
+    <td id="Hulín" class="table_dalnice-exit" colspan="3">
 		<span class="exit_nr">265</span>
 		Hulín
-		<span class="dalnice2_planned">49</span>
-		<span class="dalnice2">55</span>
+		<a href="d049.html"><span class="dalnice_planned">49</span></a>
+		<a href="d055.html"><span class="dalnice">55</span></a>
 	</td>
   </tr>
-  <tr>
+  <tr class="camera">
     <td class="table_dalnice-baqh">
 		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2315">
 	</td>
     <td class="table_dalnice-baqh">
-		268,0
+		268,0	<br>
+		<-- 	<br><br>
+		271,7	<br>
+		-->
 	</td>
     <td class="table_dalnice-baqh">
-		---
+		<img class="CameraImage" src="https://api.dopravniinfo.cz/CameraImage.ashx?camera=2316">
 	</td>
   </tr>
   <tr>
-    <td class="table_dalnice-exit" colspan="3">
+    <td id="Říkovice" class="table_dalnice-exit" colspan="3">
 		<span class="exit_nr">272</span>
 		Říkovice
-		<span class="silnice2">55</span>
+		<span class="silnice">55</span>
 	</td>
   <tr>
     <td class="table_dalnice-exit_planned" colspan="3">
 		<span class="exit_nr">278</span>
 		Přerov–západ
-		<span style="border: 2px solid white;border-radius: 5px;padding:1px 8px;background-color:#0000FF7F">434</span>
+		<span class="silnice_planned">434</span>
 	</td>
   <tr>
     <td class="table_dalnice-exit_planned" colspan="3">
 		<span class="exit_nr">281</span>
 		Přerov–sever
-		<span class="dalnice2_planned">55</span>
+		<a href="d055.html"><span class="dalnice_planned">55</span></a>
+		<span class="silnice_planned">55</span>
 	</td>
   <tr>
     <td class="table_dalnice-exit" colspan="3">
