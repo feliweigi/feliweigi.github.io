@@ -48,7 +48,7 @@ img.CameraImage {
 
 
 .border{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:50%;border: 0.15vw solid black;font-family:DIN,Arial;font-size:0.9vw;color:black;line-height:1.17vw;text-align:center;background-color:white;}
-.border_symbol{height: 2.5vh; vertical-align: middle; }
+img.border_symbol{height: 2.5vh; vertical-align: middle; }
 
 
 span.border_planned{border: 2px solid #FFFFFF7F;border-radius: 50px;padding:1px 8px;background-color:#FFFFFFBF;color:black}
