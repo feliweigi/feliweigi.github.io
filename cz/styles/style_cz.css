@@ -3,7 +3,8 @@
   padding:0.2vw 0.2vw;max-width: 600px;}
 .table_dalnice .table_dalnice-exit{background-color:#036400;color:#ffffff;font-weight:bold}
 .table_dalnice .table_dalnice-exit_planned{background-color:#0364007F;color:#ffffff;font-weight:bold}
-.table_dalnice .table_dalnice-tunnel{background-color:#969696;color:#000000;font-weight:normal}
+.table_dalnice-tunnel{background-color:#969696;color:#000000;font-weight:normal}
+.tunnel{background-color:#969696;color:#000000;font-weight:normal}
 
 .table_nav {text-align:left;vertical-align:center;border-collapse:collapse;margin-right:1px; width:80%}
 .table_nav td{border-color:black;border-style:solid;border-width:0.1vw;font-family:Arial, sans-serif;font-size:1vw;
@@ -38,14 +39,18 @@ img.CameraImage {
 .eroad3{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN_Eng,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e;}
 .eroad3_planned{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN_Eng,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e7e;}
 
+.dalnice_pl{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.1vw;border: 0.05vw solid white;font-weight:normal;font-family:PL,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:rgb(238, 28, 31);}
+
 
 .exit_nr{color:#ffffff;font-weight:normal;font-size:0.9vw;border: 0.15vw solid white;border-radius: 2vw;padding:0.05vw 0.4vw;font-family:DIN,Arial;}
 .exit_nr_inv{color:#000000;font-weight:normal;font-size:0.9vw;border: 0.15vw solid black;border-radius: 2vw;padding:0.05vw 0.4vw;font-family:DIN,Arial;}
 
 
 
-span.border{border: 2px solid white;border-radius: 50px;padding:1px 8px;background-color:white;color:black}
-span.border_symbol{border: 3px solid red;border-radius: 20px;padding:2px 4px;background-color:#FFFFFF;color: black;font-weight:bold}
+.border{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:50%;border: 0.15vw solid black;font-family:DIN,Arial;font-size:0.9vw;color:black;line-height:1.17vw;text-align:center;background-color:white;}
+.border_symbol{height: 2.5vh; vertical-align: middle; }
+
+
 span.border_planned{border: 2px solid #FFFFFF7F;border-radius: 50px;padding:1px 8px;background-color:#FFFFFFBF;color:black}
 span.border_symbol_planned{border: 3px solid #FF00007F;border-radius: 20px;padding:2px 4px;background-color:#FFFFFFBF;color: black;font-weight:bold}
 
@@ -66,6 +71,11 @@ img.vms{width:100%;height: 23vh ;}
 @font-face {
   font-family: DIN_Eng;
   src: url(../../fonts/din1451e.ttf);
+}
+
+@font-face {
+  font-family: PL;
+  src: url(../../fonts/Drogowskaz.ttf);
 }
 
 html {
