@@ -1,0 +1,17 @@
+tbody tr:nth-child(odd){background-color: lightgrey}
+tbody tr:nth-child(even){background-color: darkgrey}
+tbody td:nth-child(1){width: 5%; padding: 0.2vw;}
+tbody tr:hover{border: 2px solid yellow; background-color: #777777; font-weight: bold;}
+.table_traffic td{border-color:black;border-style:solid;border-width:0.1vw;font-family:Arial, sans-serif;font-size:0.8vw;
+  padding:0.2vw 1vw}
+.table_traffic th{border-color:black;border-style:solid;border-width:0.1vw;font-family:Arial, sans-serif;font-size:0.8vw;
+  padding:0.2vw 0.2vw}
+.table_traffic  {text-align:center;vertical-align:center;border-collapse:collapse; width: 100%;}
+
+.planned{opacity: 0.5;}
+.shield{width:5vw}
+.icon{width: 2vw;}
+.icon_pl{width: 2vw; opacity: 0.5;}
+.nav{font-family: Arial}
+.flag{height: 2vw;width: 4vw;}
+h1{font-family: Arial; text-align: center;}
