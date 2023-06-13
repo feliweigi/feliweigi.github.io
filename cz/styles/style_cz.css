@@ -33,17 +33,17 @@ img.CameraImage {
   height: auto;
 }
 
-.dalnice{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#CD151E;}
-.dalnice_planned{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#CD151E7E;}
-.silnice{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#014A8E;}
-.silnice_planned{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#014A8E7E;}
-.eroad{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e;}
-.eroad_planned{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e7e;}
-.eroad3{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN_Eng,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e;}
-.eroad3_planned{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN_Eng,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e7e;}
+.dalnice{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#CD151E;font-style: normal;}
+.dalnice_planned{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#CD151E7E;font-style: normal;}
+.silnice{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#014A8E;font-style: normal;}
+.silnice_planned{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#014A8E7E;font-style: normal;}
+.eroad{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e;font-style: normal;}
+.eroad_planned{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e7e;font-style: normal;}
+.eroad3{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN_Eng,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e;font-style: normal;}
+.eroad3_planned{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:DIN_Eng,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:#00874e7e;font-style: normal;}
 
-.dalnice_pl{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.1vw;border: 0.05vw solid white;font-weight:normal;font-family:PL,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:rgb(238, 28, 31);}
-.dalnice_sk{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:Tern,Arial;font-size:1.2vw;color:#fff;line-height:0.9vw;text-align:center;background-color:rgb(186, 30, 16);}
+.dalnice_pl{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.1vw;border: 0.05vw solid white;font-weight:normal;font-family:PL,Arial;font-size:0.9vw;color:#fff;line-height:1.17vw;text-align:center;background-color:rgb(238, 28, 31);font-style: normal;}
+.dalnice_sk{display: inline-block;width:1.9753vw;height:1.15vw;border-radius:0.25vw;border: 0.15vw solid white;font-weight:normal;font-family:Tern,Arial;font-size:1.2vw;color:#fff;line-height:0.9vw;text-align:center;background-color:rgb(186, 30, 16);font-style: normal;}
 
 .exit_nr{color:#ffffff;font-weight:normal;font-size:0.9vw;border: 0.15vw solid white;border-radius: 2vw;padding:0.05vw 0.4vw;font-family:DIN,Arial;}
 .exit_nr_inv{color:#000000;font-weight:normal;font-size:0.9vw;border: 0.15vw solid black;border-radius: 2vw;padding:0.05vw 0.4vw;font-family:DIN,Arial;}
