@@ -35,7 +35,21 @@
     <option value="23">23:00</option>
 </select><br>
 <button onclick="getAbfahrtstafel(document.getElementById('ril100').value,document.getElementById('hour').value)">Start</button><br>
+<button onclick="getChanges(evaNumber)">Echtzeit laden</button><br>
+<button onclick="sortTable()">Sortieren</button><br>
+<button onclick="hideRows()">Vergangenheit verstecken</button><br>
 
+<textarea id="evaNumber" value="evaNumber"></textarea>
+<table id="table_Bahnhofstafel">
+    <thead>
+        <th colspan="2">Zugnummer</th>
+        <th>Ankunft</th>
+        <th>Abfahrt</th>
+        <th>Ziel</th>
+        <th>Gleis</th>
+    </thead>
+    <tbody id="Abfahrtstafel"></tbody>
+</table>
 
 </body>
 
