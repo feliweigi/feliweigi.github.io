@@ -1,13 +1,14 @@
 let evaNumber;
 let trainID;
 let data;
+let MessageCodes
 
 async function getAbfahrtstafel(ril100) {
   var Abfahrtstafel = document.getElementById("Abfahrtstafel");
   Abfahrtstafel.innerHTML = "";
 
   document.getElementById("Changes").innerHTML = "";
-getMessagefromCode
+loadMessageText()
 getStationEvaNumber(ril100)
   for (var i = -3; i < 3; i++) {
     getDepatures(evaNumber, getCurrentDate(i), getCurrentHour(i));
@@ -202,7 +203,13 @@ function getChanges(evaNumber) {
             document.getElementById(trainID + "-5").className = "delayed"
             document.getElementById(trainID + "-5").innerHTML = train.getElementsByTagName("dp")[0].getAttribute("cp")
            }
+
+           document.getElementById(trainID + "-4").innerHTML = ("<span class='delayed' class='message'>" + checkMessages(train) +"</span></br>" + document.getElementById(trainID + "-4").innerHTML)
         }
+
+
+        
+
 
         // Verarbeite die XML-Daten weiter...
       }
@@ -518,7 +525,7 @@ function checkMessages(train){
     if(train.getElementsByTagName("dp")[0].getElementsByTagName("m").length > 0){
       for(var i = 0; i < (train.getElementsByTagName("dp")[0].getElementsByTagName("m").length); i++){
         code = train.getElementsByTagName("dp")[0].getElementsByTagName("m")[i].getAttribute('c')
-        if((! (usedCodes.includes(code))) && (code > 0)){
+        if(((! (usedCodes.includes(code))) && (code > 0)) && (code < 100)){
           console.log(code)
           usedCodes.push(code)
           console.log(usedCodes)
@@ -545,12 +552,12 @@ function checkMessages(train){
 
 
 function getMessagefromCode(code){
-      console.log(MessageCodes.getElementsByTagName('c')[code].getAttribute('content'));
+      console.log(MessageCodes.getElementsByTagName('c')[code].getAttribute('content'))
       delayText = MessageCodes.getElementsByTagName('c')[code].getAttribute('content')
       return delayText
 }
 
-let MessageCodes
+
 function loadMessageText(){
   fetch(
     "messages.xml",
