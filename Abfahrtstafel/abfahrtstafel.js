@@ -115,9 +115,18 @@ function getChanges(evaNumber) {
             console.log("changed Arrival");
             document.getElementById(trainID + "-7").innerHTML = sortTime;
             console.log("changed sortTime Arrival");
+
+
+
+
           } else {
             console.log(i + ":hasNoArrival");
           }
+
+          if(checkForNewPlatformArrival(train)==1){
+            document.getElementById(trainID + "-5").className = "delayed"
+            document.getElementById(trainID + "-5").innerHTML = train.getElementsByTagName("ar")[0].getAttribute("cp")
+           }
 
           if (train.getElementsByTagName("ar")[0] != undefined) {
             if (
@@ -181,9 +190,18 @@ function getChanges(evaNumber) {
               document.getElementById(trainID + "-7").innerHTML = sortTime;
             }
             console.log("changed sortTime Depature");
+
+
+
+
           } else {
             console.log(i + ":hasNoDepature");
           }
+
+          if(checkForNewPlatformDepature(train)==1){
+            document.getElementById(trainID + "-5").className = "delayed"
+            document.getElementById(trainID + "-5").innerHTML = train.getElementsByTagName("dp")[0].getAttribute("cp")
+           }
         }
 
         // Verarbeite die XML-Daten weiter...
@@ -194,7 +212,7 @@ function getChanges(evaNumber) {
     });
 }
 
-async function getDepatures(evaNumber, date, hour) {
+function getDepatures(evaNumber, date, hour) {
   var xhr = new XMLHttpRequest();
   xhr.open(
     "GET",
@@ -286,143 +304,11 @@ async function getDepatures(evaNumber, date, hour) {
                     <td id=${trainID + "-3"} class="planned">${depatureTime}</td>
                     <td id=${trainID + "-4"}>${ziel}</td>
                     <td id=${trainID + "-5"}>${gleis}</td>
-                    <td id=${
-                      trainID + "-6"
-                    }><a href=${wagenreihungURL} target="_blank">Wagenreihung</a></td>
+                    <td id=${trainID + "-6"}><a href=${wagenreihungURL} target="_blank"><img src="https://www.img-bahn.de/s3/prod/v/img_responsive/20dp_icon_transportation_car-sequence.svg"></img></a></td>
                     <td id=${trainID + "-7"}>${sortTime}</td>
                 </tr>`;
         table.innerHTML += row;
       }
-    }
-  };
-  xhr.send(null);
-}
-
-async function getChangesOld(evaNumber) {
-  var xhr = new XMLHttpRequest();
-  xhr.open(
-    "GET",
-    "https://apis.deutschebahn.com/db-api-marketplace/apis/timetables/v1/fchg/" +
-      evaNumber
-  );
-  xhr.setRequestHeader("Accept", "application/json");
-  xhr.setRequestHeader("DB-Client-ID", "b9fac6fe073cc6244297b2e8587b2ab1");
-  xhr.setRequestHeader("DB-Api-Key", "902e319aeae8bd7a6299b82a175b0ec5");
-
-  xhr.onreadystatechange = function () {
-    parser = new DOMParser();
-    const data = parser.parseFromString(xhr.responseText, "text/xml");
-    document.getElementById("debug").innerHTML =
-      "0/" + data.getElementsByTagName("s").length;
-
-    for (var i = 0; i < data.getElementsByTagName("s").length; i++) {
-      /*    
-        document.getElementById('debug').innerHTML = (i+1) + "/" + data.getElementsByTagName('s').length
-        train = data.getElementsByTagName('s')[i]
-        trainID = train.getAttribute('id')
-
-        
-        if(document.getElementById(trainID) != null) {
-        var table = document.getElementById('Abfahrtstafel')
-
-        arrivalTime = ""
-        depatureTime = ""
-
-        hasArrival = checkArrival(train)
-        hasDepature = checkDepature(train)
-
-        if (hasArrival == 1) {
-            arrivalTime = DBDateToTime(train.getElementsByTagName('ar')[0].getAttribute('ct'))
-            document.getElementById(trainID + "-2").innerHTML += "(" + arrivalTime + ")"
-            document.getElementById(trainID + "-2").id = trainID + "-2c"
-            sortTime = makeDateObject(train.getElementsByTagName('ar')[0].getAttribute('ct'))
-            document.getElementById(trainID + "-7").innerHTML = sortTime
-            document.getElementById(trainID + "-7").id = trainID + "-7c"
-        } else {arrivalTime = ""}
-
-        if (hasDepature == 1) {
-            depatureTime = DBDateToTime(train.getElementsByTagName('dp')[0].getAttribute('ct'))
-            document.getElementById(trainID + "-3").innerHTML += "(" + depatureTime + ")"
-            document.getElementById(trainID + "-3").id = trainID + "-3c"
-            sortTime = makeDateObject(train.getElementsByTagName('dp')[0].getAttribute('ct'))
-            document.getElementById(trainID + "-7").innerHTML = sortTime
-            document.getElementById(trainID + "-7").id = trainID + "-7c"
-        } else {depatureTime = ""}
-
-
-        if (hasDepature == 1) {
-            verlauf = train.getElementsByTagName('dp')[0].getAttribute('ppth')
-        } else {
-            verlauf = "von " + train.getElementsByTagName('ar')[0].getAttribute('ppth')
-        }
-
-        if (hasDepature == 1) {
-            gleis = train.getElementsByTagName('dp')[0].getAttribute('pp')
-        } else {
-            gleis = train.getElementsByTagName('ar')[0].getAttribute('pp')
-        }
-          
-        } */ document.getElementById("debug").innerHTML =
-        i + 1 + "/" + data.getElementsByTagName("s").length;
-
-      var table = document.getElementById("Changes");
-
-      arrivalTime = "";
-      depatureTime = "";
-
-      hasArrival = checkArrival(train);
-      hasDepature = checkDepature(train);
-
-      if (hasArrival == 1) {
-        arrivalTime = DBDateToTime(
-          train.getElementsByTagName("ar")[0].getAttribute("ct")
-        );
-        sortTime = makeDateObject(
-          train.getElementsByTagName("ar")[0].getAttribute("ct")
-        );
-      } else {
-        arrivalTime = "";
-      }
-
-      if (hasDepature == 1) {
-        depatureTime = DBDateToTime(
-          train.getElementsByTagName("dp")[0].getAttribute("ct")
-        );
-        sortTime = makeDateObject(
-          train.getElementsByTagName("dp")[0].getAttribute("ct")
-        );
-      } else {
-        depatureTime = "";
-      }
-
-      /*
-            if (hasDepature == 1) {
-                verlauf = train.getElementsByTagName('dp')[0].getAttribute('ppth')
-            } else {
-                verlauf = "von " + train.getElementsByTagName('ar')[0].getAttribute('ppth')
-            }
-    
-            if (hasDepature == 1) {
-                gleis = train.getElementsByTagName('dp')[0].getAttribute('pp')
-            } else {
-                gleis = train.getElementsByTagName('ar')[0].getAttribute('pp')
-            }
-            */
-
-      //verlauf = verlauf.split("|")
-      var row = `<tr id=${trainID + "Chg"}>
-                <td id=${trainID + "-1_Chg"}></td>       
-                <td id=${trainID + "-2_Chg"} class="planned">${arrivalTime}</td>                
-                <td id=${trainID + "-3_Chg"} class="planned">${depatureTime}</td>
-                <td id=${trainID + "-4_Chg"}></td> 
-                <td id=${trainID + "-5_Chg"}></td> 
-                <td id=${trainID + "-6_Chg"}></td> 
-                <td id=${trainID + "-7_Chg"}>${sortTime}</td>
-                    </tr>`;
-      table.innerHTML += row;
-
-      document.getElementById("debug").innerHTML =
-        i + 1 + "/" + data.getElementsByTagName("s").length;
     }
   };
   xhr.send(null);
@@ -513,7 +399,7 @@ function makeDateObject(timeString) {
   date.setDate(day);
   date.setHours(hours);
   date.setMinutes(minutes);
-  date.setSeconds(0);
+  date.setSeconds(59);
 
   return date;
 }
@@ -585,3 +471,95 @@ function calculateTimeDifference(time1, time2) {
     
     return difference;
   }
+
+function checkForNewPlatformArrival(train){
+  console.log("Checking for Platform");
+  if (train.getElementsByTagName("ar")[0] == undefined) {
+    return 0;
+  } else {
+    if (
+      train.getElementsByTagName("ar")[0].getAttribute("cp") != undefined
+    ) {
+      console.log("found new Platform Arrival")
+      return 1;
+    } else {
+      return 0;
+    }
+  }  
+
+}
+
+function checkForNewPlatformDepature(train){
+  console.log("Checking for Platform");
+  if (train.getElementsByTagName("dp")[0] == undefined) {
+    return 0;
+  } else {
+    if (
+      train.getElementsByTagName("dp")[0].getAttribute("cp") != undefined
+    ) {
+      console.log("found new Platform Depature")
+      return 1;
+    } else {
+      return 0;
+    }
+  }  
+
+}
+
+function checkMessages(train){
+  const messages = []
+  const usedCodes  = []
+
+  if(train.getElementsByTagName("dp")[0] == undefined){
+
+
+
+  } else {
+    if(train.getElementsByTagName("dp")[0].getElementsByTagName("m").length > 0){
+      for(var i = 0; i < (train.getElementsByTagName("dp")[0].getElementsByTagName("m").length); i++){
+        code = train.getElementsByTagName("dp")[0].getElementsByTagName("m")[i].getAttribute('c')
+        if(! (usedCodes.includes(code))){
+          usedCodes.push(code)
+
+
+        }
+
+
+
+      }
+    }
+
+
+  }
+
+
+
+
+  return messages
+}
+
+
+function getMessagefromCode(code){
+  fetch(
+    "messages.xml",
+    {
+      method: "GET",
+    }
+  )
+    .then(function (response) {
+      return response.text(); // Die Antwort als Text erhalten
+    })
+    .then(function (data) {
+      var parser = new DOMParser();
+      var xmlDoc = parser.parseFromString(data, "text/xml"); // Das XML in ein XML-Dokument umwandeln
+      console.log(xmlDoc);
+      // Du kannst nun auf die Daten im XML-Dokument zugreifen
+      // Das erste <station>-Element auswählen
+      // Verarbeite die XML-Daten weiter...
+    })
+    .catch(function (error) {
+      // Fehlerbehandlung
+    });  
+
+
+}
