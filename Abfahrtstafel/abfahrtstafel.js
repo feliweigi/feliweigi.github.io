@@ -7,7 +7,7 @@ async function getAbfahrtstafel(ril100) {
   Abfahrtstafel.innerHTML = "";
 
   document.getElementById("Changes").innerHTML = "";
-
+getMessagefromCode
 getStationEvaNumber(ril100)
   for (var i = -3; i < 3; i++) {
     getDepatures(evaNumber, getCurrentDate(i), getCurrentHour(i));
@@ -521,7 +521,9 @@ function checkMessages(train){
         if((! (usedCodes.includes(code))) && (code > 0)){
           console.log(code)
           usedCodes.push(code)
-          messages.push(getMessagefromCode(code))
+          console.log(usedCodes)
+          messageText = getMessagefromCode(code)
+          messages.push(messageText)
           console.log(messages)
 
 
@@ -542,9 +544,14 @@ function checkMessages(train){
 }
 
 
-let delayText
-
 function getMessagefromCode(code){
+      console.log(MessageCodes.getElementsByTagName('c')[code].getAttribute('content'));
+      delayText = MessageCodes.getElementsByTagName('c')[code].getAttribute('content')
+      return delayText
+}
+
+let MessageCodes
+function loadMessageText(){
   fetch(
     "messages.xml",
     {
@@ -556,19 +563,12 @@ function getMessagefromCode(code){
     })
     .then(function (data) {
       var parser = new DOMParser();
-      var xmlDoc = parser.parseFromString(data, "text/xml"); // Das XML in ein XML-Dokument umwandeln
-      console.log(xmlDoc);
-      console.log(xmlDoc.getElementsByTagName('c')[code].getAttribute('content'));
-      delayText = xmlDoc.getElementsByTagName('c')[code].getAttribute('content')
-      
+      MessageCodes = parser.parseFromString(data, "text/xml"); // Das XML in ein XML-Dokument umwandeln      
       // Du kannst nun auf die Daten im XML-Dokument zugreifen
       // Das erste <station>-Element auswählen
       // Verarbeite die XML-Daten weiter...
-      return delayText
     })
     .catch(function (error) {
       // Fehlerbehandlung
-      return delayText
     });  
-    return delayText
 }
