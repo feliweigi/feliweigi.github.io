@@ -518,8 +518,11 @@ function checkMessages(train){
     if(train.getElementsByTagName("dp")[0].getElementsByTagName("m").length > 0){
       for(var i = 0; i < (train.getElementsByTagName("dp")[0].getElementsByTagName("m").length); i++){
         code = train.getElementsByTagName("dp")[0].getElementsByTagName("m")[i].getAttribute('c')
-        if(! (usedCodes.includes(code))){
+        if((! (usedCodes.includes(code))) && (code > 0)){
+          console.log(code)
           usedCodes.push(code)
+          messages.push(getMessagefromCode(code))
+          console.log(messages)
 
 
         }
@@ -539,6 +542,8 @@ function checkMessages(train){
 }
 
 
+let delayText
+
 function getMessagefromCode(code){
   fetch(
     "messages.xml",
@@ -553,13 +558,17 @@ function getMessagefromCode(code){
       var parser = new DOMParser();
       var xmlDoc = parser.parseFromString(data, "text/xml"); // Das XML in ein XML-Dokument umwandeln
       console.log(xmlDoc);
+      console.log(xmlDoc.getElementsByTagName('c')[code].getAttribute('content'));
+      delayText = xmlDoc.getElementsByTagName('c')[code].getAttribute('content')
+      
       // Du kannst nun auf die Daten im XML-Dokument zugreifen
       // Das erste <station>-Element auswählen
       // Verarbeite die XML-Daten weiter...
+      return delayText
     })
     .catch(function (error) {
       // Fehlerbehandlung
+      return delayText
     });  
-
-
+    return delayText
 }
