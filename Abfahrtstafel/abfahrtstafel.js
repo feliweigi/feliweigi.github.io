@@ -204,7 +204,11 @@ function getChanges(evaNumber) {
             document.getElementById(trainID + "-5").innerHTML = train.getElementsByTagName("dp")[0].getAttribute("cp")
            }
 
-           document.getElementById(trainID + "-4").innerHTML = ("<span class='message'>" + checkMessages(train) +"</span></br>" + document.getElementById(trainID + "-4").innerHTML)
+           trainMessage = checkMessages(train)
+           if (trainMessage.length > 0) {
+            document.getElementById(trainID + "-4").innerHTML = ("<span class='message'>" + trainMessage +"</span></br>" + document.getElementById(trainID + "-4").innerHTML)
+           }
+           
         }
 
 
