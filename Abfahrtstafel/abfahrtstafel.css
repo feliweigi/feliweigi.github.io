@@ -1,8 +1,9 @@
+
 .cancelled{text-decoration: line-through;color: red;}
-.abfahrtstafel_Table{background-color: darkblue;color: white;font-size: 10vw;width: 100%;}
-.abfahrtstafel_Table td{font-size: 10vw;background-color: blue;border-color:black;border-style:solid;border-width:0.1vw;font-family:Arial, sans-serif;font-size:0.8vw;
-    padding:0.2vw}
-.abfahrtstafel_Table th{font-size: 10vw;background-color: blue;border-color:black;border-style:solid;border-width:0.1vw;font-family:Arial, sans-serif;font-size:0.8vw;
+.abfahrtstafel_Table{background-color: darkblue;color: white;width: 100%;}
+.abfahrtstafel_Table td{background-color: blue;border-color:black;border-style:solid;border-width:0.1vw;font-family:Arial, sans-serif;font-size:0.8vw;
+    padding:0.2vw; vertical-align: bottom;}
+.abfahrtstafel_Table th{background-color: blue;border-color:black;border-style:solid;border-width:0.1vw;font-family:Arial, sans-serif;font-size:0.8vw;
     padding:0.2vw}
 button{display: flexbox;}
 textarea{display: flexbox;}
@@ -14,10 +15,12 @@ tbody td:nth-child(2){font-size: 2vw; width: 7%; text-align: right;}
 tbody td:nth-child(3){font-size: 2vw; width: 11%;}
 tbody td:nth-child(4){font-size: 2vw; width: 11%;}
 tbody td:nth-child(5){font-size: 2vw;}
-tbody td:nth-child(6){font-size: 2vw; width: 3% ;text-align: right;}
+tbody td:nth-child(6){font-size: 2vw; width: 7% ;text-align: right;}
 tbody td:nth-child(7){font-size: 2vw; width: 1%; background-color: white; text-align: center;}
 
 .delayType{font-size: 1vw; color: yellow; text-decoration: none;} 
+
+
 
 
 

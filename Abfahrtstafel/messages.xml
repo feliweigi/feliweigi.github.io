@@ -1,34 +1,34 @@
 <codes>
 <c num="0" content="N/A"></c>
-<c num="1" content="N/A"></c>
+<c num="1" content="Nähere Informationen in Kürze"></c>
 <c num="2" content="Polizeieinsatz"></c>
 <c num="3" content="Feuerwehreinsatz auf der Strecke"></c>
-<c num="4" content="N/A"></c>
+<c num="4" content="Kurzfristiger Personalausfall"></c>
 <c num="5" content="Ärztliche Versorgung eines Fahrgastes"></c>
 <c num="6" content="Unbefugtes Ziehen der Notbremse"></c>
 <c num="7" content="Unbefugte Personen auf der Strecke"></c>
 <c num="8" content="Notarzteinsatz auf der Strecke"></c>
-<c num="9" content="N/A"></c>
+<c num="9" content="Streikauswirkungen"></c>
 <c num="10" content="Tiere auf der Strecke"></c>
-<c num="11" content="N/A"></c>
-<c num="12" content="N/A"></c>
+<c num="11" content="Unwetter"></c>
+<c num="12" content="Warten auf ein verspätetes Schiff"></c>
 <c num="13" content="Pass- und Zollkontrolle"></c>
-<c num="14" content="N/A"></c>
-<c num="15" content="N/A"></c>
+<c num="14" content="Technischer Defekt am Bahnhof"></c>
+<c num="15" content="Beeinträchtigung durch Vandalismus"></c>
 <c num="16" content="Entschärfung einer Fliegerbombe"></c>
-<c num="17" content="N/A"></c>
-<c num="18" content="N/A"></c>
-<c num="19" content="N/A"></c>
-<c num="20" content="N/A"></c>
+<c num="17" content="Beschädigung einer Brücke"></c>
+<c num="18" content="Umgestürzter Baum auf der Strecke"></c>
+<c num="19" content="Unfall an einem Bahnübergang"></c>
+<c num="20" content="Tiere auf der Strecke"></c>
 <c num="21" content="Warten auf Anschlussreisende"></c>
-<c num="22" content="N/A"></c>
-<c num="23" content="N/A"></c>
+<c num="22" content="Witterungsbedingte Beeinträchtigungen"></c>
+<c num="23" content="Feuerwehreinsatz auf Bahngelände"></c>
 <c num="24" content="Verspätung aus dem Ausland"></c>
 <c num="25" content="Bereitstellung weiterer Wagen"></c>
-<c num="26" content="N/A"></c>
+<c num="26" content="Abhängen von Wagen"></c>
 <c num="27" content="N/A"></c>
 <c num="28" content="Gegenstände auf der Strecke"></c>
-<c num="29" content="N/A"></c>
+<c num="29" content="Ersatzverkehr mit Bus ist eingerichtet"></c>
 <c num="30" content="N/A"></c>
 <c num="31" content="Bauarbeiten"></c>
 <c num="32" content="Unterstützung beim Ein- und Ausstieg"></c>
@@ -36,11 +36,11 @@
 <c num="34" content="Reparatur an einem Signal"></c>
 <c num="35" content="Streckensperrung"></c>
 <c num="36" content="Reparatur am Zug"></c>
-<c num="37" content="N/A"></c>
+<c num="37" content="Repatatur am Wagen"></c>
 <c num="38" content="Reparatur an der Strecke"></c>
 <c num="39" content="Anhängen von zusätzlichen Wagen"></c>
 <c num="40" content="Defektes Stellwerk"></c>
-<c num="41" content="N/A"></c>
+<c num="41" content="Technischer Defekt an einem Bahnübergang"></c>
 <c num="42" content="Vorübergehend verminderte Geschwindigkeit auf der Strecke"></c>
 <c num="43" content="Verspätung eines vorausfahrenden Zuges"></c>
 <c num="44" content="Warten auf Entgegenkommenden Zug"></c>
@@ -51,34 +51,34 @@
 <c num="49" content="Kurzfristiger Personalausfall"></c>
 <c num="50" content="Kurzfristige Erkrankung von Personal"></c>
 <c num="51" content="Verspätetes Personal aus vorheriger Fahrt"></c>
-<c num="52" content="N/A"></c>
-<c num="53" content="N/A"></c>
+<c num="52" content="Streik"></c>
+<c num="53" content="Unwetterauswirkungen"></c>
 <c num="54" content="Verfügbarkeit der Gleise derzeit eingeschränkt"></c>
-<c num="55" content="N/A"></c>
-<c num="56" content="N/A"></c>
+<c num="55" content="Technische Störung an einem anderen Zug"></c>
+<c num="56" content="Warten auf Anschlussreisende"></c>
 <c num="57" content="Zusätzlicher Halt zum Ein- und Ausstieg"></c>
 <c num="58" content="Umleitung"></c>
-<c num="59" content="N/A"></c>
-<c num="60" content="N/A"></c>
+<c num="59" content="Schnee und Eis"></c>
+<c num="60" content="Witterungsbedingt verminderte Geschwindigkeit"></c>
 <c num="61" content="Defekte Tür"></c>
-<c num="62" content="N/A"></c>
-<c num="63" content="N/A"></c>
+<c num="62" content="Behobener technischer Defekt am Zug"></c>
+<c num="63" content="Technische Untersuchung am Zug"></c>
 <c num="64" content="Reparatur an der Weiche"></c>
-<c num="65" content="N/A"></c>
-<c num="66" content="N/A"></c>
+<c num="65" content="Erdrutsch"></c>
+<c num="66" content="Hochwasser"></c>
 <c num="67" content="Behördliche Maßnahme"></c>
 <c num="68" content="Hohes Fahrgastaufkommen verlängert Ein- und Ausstieg"></c>
-<c num="69" content="N/A"></c>
-<c num="70" content="N/A"></c>
-<c num="71" content="N/A"></c>
-<c num="72" content="N/A"></c>
-<c num="73" content="N/A"></c>
-<c num="74" content="N/A"></c>
-<c num="75" content="N/A"></c>
-<c num="76" content="N/A"></c>
+<c num="69" content="Zug verkehrt mit verminderter Geschwindigkeit"></c>
+<c num="70" content="WLAN nicht verfügbar"></c>
+<c num="71" content="WLAN in einem/mehreren Wagen nicht verfügbar"></c>
+<c num="72" content="Info-/Entertainment nicht verfügbar"></c>
+<c num="73" content="Mehrzweckabteil vorne"></c>
+<c num="74" content="Mehrzweckabteil hinten"></c>
+<c num="75" content="1. Klasse vorne"></c>
+<c num="76" content="1. Klasse hinten"></c>
 <c num="77" content="1. Klasse fehlt"></c>
 <c num="78" content="Ersatzverkehr mit Bus ist eingerichtet"></c>
-<c num="79" content="N/A"></c>
+<c num="79" content="Mehrzweckabteil fehlt"></c>
 <c num="80" content="Abweichende Wagenreihung"></c>
 <c num="81" content="N/A"></c>
 <c num="82" content="mehrere Wagen fehlen"></c>
@@ -86,9 +86,9 @@
 <c num="84" content="Zug verkehrt richtig gereiht"></c>
 <c num="85" content="Ein Wagen fehlt"></c>
 <c num="86" content="Keine Reservierungsanzeige"></c>
-<c num="87" content="N/A"></c>
+<c num="87" content="Einzelne Wagen ohne Reservierungsanzeige"></c>
 <c num="88" content="Keine Qualitätsmängel"></c>
-<c num="89" content="N/A"></c>
+<c num="89" content="Reservierungen sind wieder vorhanden"></c>
 <c num="90" content="Kein Bordrestaurant/Bordbistro"></c>
 <c num="91" content="Fahrradmitnahme nicht möglich"></c>
 <c num="92" content="Eingeschränkte Fahrradbeförderung"></c>

@@ -47,6 +47,7 @@ function getStationEvaNumber(ril100) {
       // Den Wert des "eva"-Attributs auslesen
       evaNumber = stationElement.getAttribute("eva");
       document.getElementById("evaNumber").innerHTML = evaNumber;
+      document.getElementById("StationName").innerHTML = stationElement.getAttribute("name");
 
       // Verarbeite die XML-Daten weiter...
     })
@@ -525,18 +526,38 @@ function checkMessages(train){
   const usedCodes  = []
 
   if(train.getElementsByTagName("dp")[0] == undefined){
+    if(train.getElementsByTagName("ar")[0] != undefined){  
+    if(train.getElementsByTagName("ar")[0].getElementsByTagName("m").length > 0){
+      for(var i = 0; i < (train.getElementsByTagName("ar")[0].getElementsByTagName("m").length); i++){
+        code = train.getElementsByTagName("ar")[0].getElementsByTagName("m")[i].getAttribute('c')
+        time = train.getElementsByTagName("ar")[0].getElementsByTagName("m")[i].getAttribute('ts-tts')
+        if(((! (usedCodes.includes(code))) && (code > 0)) && (code < 100)){
+          console.log(code)
+          usedCodes.push(code)
+          console.log(usedCodes)
+          messageText =  "(" + time.substring(9,14) + ") " + getMessagefromCode(code)
+          messages.push(messageText)
+          console.log(messages)
 
 
+        }
+
+
+
+      }
+    }
+  }
 
   } else {
     if(train.getElementsByTagName("dp")[0].getElementsByTagName("m").length > 0){
       for(var i = 0; i < (train.getElementsByTagName("dp")[0].getElementsByTagName("m").length); i++){
         code = train.getElementsByTagName("dp")[0].getElementsByTagName("m")[i].getAttribute('c')
+        time = train.getElementsByTagName("dp")[0].getElementsByTagName("m")[i].getAttribute('ts-tts')
         if(((! (usedCodes.includes(code))) && (code > 0)) && (code < 100)){
           console.log(code)
           usedCodes.push(code)
           console.log(usedCodes)
-          messageText = getMessagefromCode(code)
+          messageText =  "(" + time.substring(9,14) + ") " + getMessagefromCode(code)
           messages.push(messageText)
           console.log(messages)
 
@@ -559,6 +580,7 @@ function checkMessages(train){
 
 
 function getMessagefromCode(code){
+      console.log("Code: " + code)
       console.log(MessageCodes.getElementsByTagName('c')[code].getAttribute('content'))
       delayText = MessageCodes.getElementsByTagName('c')[code].getAttribute('content')
       return delayText
