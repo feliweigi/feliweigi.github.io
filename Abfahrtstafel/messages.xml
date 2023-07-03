@@ -5,7 +5,7 @@
 <c num="3" content="Feuerwehreinsatz auf der Strecke"></c>
 <c num="4" content="N/A"></c>
 <c num="5" content="Ärztliche Versorgung eines Fahrgastes"></c>
-<c num="6" content="N/A"></c>
+<c num="6" content="Unbefugtes Ziehen der Notbremse"></c>
 <c num="7" content="Unbefugte Personen auf der Strecke"></c>
 <c num="8" content="Notarzteinsatz auf der Strecke"></c>
 <c num="9" content="N/A"></c>
@@ -45,7 +45,7 @@
 <c num="43" content="Verspätung eines vorausfahrenden Zuges"></c>
 <c num="44" content="Warten auf Entgegenkommenden Zug"></c>
 <c num="45" content="Überholung durch anderen Zug"></c>
-<c num="46" content="N/A"></c>
+<c num="46" content="Warten aud freie Einfahrt"></c>
 <c num="47" content="Verspätete Bereitstellung"></c>
 <c num="48" content="Verspätung aus vorheriger Fahrt"></c>
 <c num="49" content="Kurzfristiger Personalausfall"></c>
@@ -76,12 +76,12 @@
 <c num="74" content="N/A"></c>
 <c num="75" content="N/A"></c>
 <c num="76" content="N/A"></c>
-<c num="77" content="N/A"></c>
+<c num="77" content="1. Klasse fehlt"></c>
 <c num="78" content="Ersatzverkehr mit Bus ist eingerichtet"></c>
 <c num="79" content="N/A"></c>
 <c num="80" content="Abweichende Wagenreihung"></c>
 <c num="81" content="N/A"></c>
-<c num="82" content="N/A"></c>
+<c num="82" content="mehrere Wagen fehlen"></c>
 <c num="83" content="Defekte fahrzeuggebundene Einstiegshilfe"></c>
 <c num="84" content="N/A"></c>
 <c num="85" content="Ein Wagen fehlt"></c>
