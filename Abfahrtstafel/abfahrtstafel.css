@@ -17,7 +17,7 @@ tbody td:nth-child(5){font-size: 2vw;}
 tbody td:nth-child(6){font-size: 2vw; width: 3% ;text-align: right;}
 tbody td:nth-child(7){font-size: 2vw; width: 1%; background-color: white; text-align: center;}
 
-.delayMessage{font-size: 5vw; color: red; text-decoration: none;} 
+.delayType{font-size: 1vw; color: yellow; text-decoration: none;} 
 
 
 

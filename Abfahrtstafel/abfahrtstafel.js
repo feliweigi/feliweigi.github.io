@@ -205,9 +205,11 @@ function getChanges(evaNumber) {
            }
 
            trainMessage = checkMessages(train)
-           trainMessage = trainMessage.split("<br>").toString()
+           
            if (trainMessage.length > 0) {
-            document.getElementById(trainID + "-4").innerHTML = ("<span class='delayMessage'>" + trainMessage +"</span></br>" + document.getElementById(trainID + "-4").innerHTML)
+            trainMessage = trainMessage.join("<br>")
+            console.log(trainMessage)
+            document.getElementById(trainID + "-4").innerHTML = ("<span class='delayType'>" + trainMessage +"</span></br>" + document.getElementById(trainID + "-4").innerHTML)
            }
            
         }
