@@ -8,15 +8,15 @@ async function getAbfahrtstafel(ril100) {
   Abfahrtstafel.innerHTML = "";
 
   document.getElementById("Changes").innerHTML = "";
-loadMessageText()
-getStationEvaNumber(ril100)
+  loadMessageText()
+  getStationEvaNumber(ril100)
   for (var i = -3; i < 3; i++) {
     getDepatures(evaNumber, getCurrentDate(i), getCurrentHour(i));
   }
 
-  
 
-  
+
+
   hideRows(sortTable(getChanges(evaNumber)));
 }
 
@@ -27,7 +27,7 @@ function getStationEvaNumber(ril100) {
 
   fetch(
     "https://apis.deutschebahn.com/db-api-marketplace/apis/timetables/v1/station/" +
-      ril100,
+    ril100,
     {
       method: "GET",
       headers: myHeaders,
@@ -63,7 +63,7 @@ function getChanges(evaNumber) {
 
   fetch(
     "https://apis.deutschebahn.com/db-api-marketplace/apis/timetables/v1/fchg/" +
-      evaNumber,
+    evaNumber,
     {
       method: "GET",
       headers: myHeaders,
@@ -93,27 +93,27 @@ function getChanges(evaNumber) {
             realArrivalTime = DBDateToTime(
               train.getElementsByTagName("ar")[0].getAttribute("ct")
             )
-            ArrivalDifference = calculateTimeDifference(document.getElementById(trainID + "-2").innerHTML,realArrivalTime)
+            ArrivalDifference = calculateTimeDifference(document.getElementById(trainID + "-2").innerHTML, realArrivalTime)
             console.log("Difference:" + ArrivalDifference)
-            
+
             sortTime = makeDateObject(
               train.getElementsByTagName("ar")[0].getAttribute("ct")
             );
             console.log("sortTime Arrival");
             console.log(sortTime);
-            if (ArrivalDifference>0) {
-                ArrivalDifference="+"+ArrivalDifference
-                if(ArrivalDifference>4){
-                    document.getElementById(trainID + "-2").className = "delayed"
-                } else{document.getElementById(trainID + "-2").className = "slightly_delayed"}
-             } else{
-                if(ArrivalDifference == 0) {
-                    document.getElementById(trainID + "-2").className = "onPoint"
-                }else{document.getElementById(trainID + "-2").className = "early"}
-             }
+            if (ArrivalDifference > 0) {
+              ArrivalDifference = "+" + ArrivalDifference
+              if (ArrivalDifference > 4) {
+                document.getElementById(trainID + "-2").className = "delayed"
+              } else { document.getElementById(trainID + "-2").className = "slightly_delayed" }
+            } else {
+              if (ArrivalDifference == 0) {
+                document.getElementById(trainID + "-2").className = "onPoint"
+              } else { document.getElementById(trainID + "-2").className = "early" }
+            }
             console.log(realArrivalTime + "(" + ArrivalDifference + ")")
             document.getElementById(trainID + "-2").innerHTML =
-                realArrivalTime + "(" + ArrivalDifference + ")"
+              realArrivalTime + "(" + ArrivalDifference + ")"
             console.log("changed Arrival");
             document.getElementById(trainID + "-7").innerHTML = sortTime;
             console.log("changed sortTime Arrival");
@@ -125,22 +125,22 @@ function getChanges(evaNumber) {
             console.log(i + ":hasNoArrival");
           }
 
-          if(checkForNewPlatformArrival(train)==1){
+          if (checkForNewPlatformArrival(train) == 1) {
             document.getElementById(trainID + "-5").className = "delayed"
             document.getElementById(trainID + "-5").innerHTML = train.getElementsByTagName("ar")[0].getAttribute("cp")
-           }
+          }
 
           if (train.getElementsByTagName("ar")[0] != undefined) {
             if (
               train.getElementsByTagName("ar")[0].getAttribute("cs") != null
             ) {
-                console.log("Ankunft fällt aus")
-                try {
-                    document.getElementById(trainID).className = "cancelled"
-                    document.getElementById(trainID + "-2").className = "cancelled"
-                } catch (error) {
-                    document.getElementById(trainID).className = "cancelled"
-                }
+              console.log("Ankunft fällt aus")
+              try {
+                document.getElementById(trainID).className = "cancelled"
+                document.getElementById(trainID + "-2").className = "cancelled"
+              } catch (error) {
+                document.getElementById(trainID).className = "cancelled"
+              }
 
             }
           }
@@ -149,15 +149,15 @@ function getChanges(evaNumber) {
             if (
               train.getElementsByTagName("dp")[0].getAttribute("cs") != null
             ) {
-                console.log("Abfahrt fällt aus")
-                try {
-                    document.getElementById(trainID).className = "cancelled"
-                    document.getElementById(trainID + "-3").className = "cancelled"
-                } catch (error) {
-                    document.getElementById(trainID).className = "cancelled"
-                }
+              console.log("Abfahrt fällt aus")
+              try {
+                document.getElementById(trainID).className = "cancelled"
+                document.getElementById(trainID + "-3").className = "cancelled"
+              } catch (error) {
+                document.getElementById(trainID).className = "cancelled"
+              }
 
-            } else {document.getElementById(trainID).className = ""}
+            } else { document.getElementById(trainID).className = "" }
           }
 
           if (hasDepature) {
@@ -165,26 +165,26 @@ function getChanges(evaNumber) {
             realDepatureTime = DBDateToTime(
               train.getElementsByTagName("dp")[0].getAttribute("ct")
             )
-            DepatureDifference = calculateTimeDifference(document.getElementById(trainID + "-3").innerHTML,realDepatureTime)
+            DepatureDifference = calculateTimeDifference(document.getElementById(trainID + "-3").innerHTML, realDepatureTime)
             console.log(realDepatureTime);
             sortTime = makeDateObject(
               train.getElementsByTagName("dp")[0].getAttribute("ct")
             );
             console.log("sortTime Depature");
-            
-            if (DepatureDifference>0) {
-                DepatureDifference="+"+DepatureDifference
-                
-                if(DepatureDifference>4){
-                    document.getElementById(trainID + "-3").className = "delayed"
-                } else{document.getElementById(trainID + "-3").className = "slightly_delayed"}
-             } else{
-                if(DepatureDifference == 0) {
-                    document.getElementById(trainID + "-3").className = "onPoint"
-                }else{document.getElementById(trainID + "-3").className = "early"}
-             }
-             document.getElementById(trainID + "-3").innerHTML =
-             realDepatureTime + "(" + DepatureDifference + ")"
+
+            if (DepatureDifference > 0) {
+              DepatureDifference = "+" + DepatureDifference
+
+              if (DepatureDifference > 4) {
+                document.getElementById(trainID + "-3").className = "delayed"
+              } else { document.getElementById(trainID + "-3").className = "slightly_delayed" }
+            } else {
+              if (DepatureDifference == 0) {
+                document.getElementById(trainID + "-3").className = "onPoint"
+              } else { document.getElementById(trainID + "-3").className = "early" }
+            }
+            document.getElementById(trainID + "-3").innerHTML =
+              realDepatureTime + "(" + DepatureDifference + ")"
             console.log("changed Depature");
             try {
               document.getElementById(trainID + "-7").innerHTML = sortTime;
@@ -200,23 +200,44 @@ function getChanges(evaNumber) {
             console.log(i + ":hasNoDepature");
           }
 
-          if(checkForNewPlatformDepature(train)==1){
+          if (checkForNewPlatformDepature(train) == 1) {
             document.getElementById(trainID + "-5").className = "delayed"
             document.getElementById(trainID + "-5").innerHTML = train.getElementsByTagName("dp")[0].getAttribute("cp")
-           }
+          }
 
-           trainMessage = checkMessages(train)
-           
-           if (trainMessage.length > 0) {
+          trainMessage = checkMessages(train)
+
+          if (trainMessage.length > 0) {
             trainMessage = trainMessage.join("<br>")
             console.log(trainMessage)
-            document.getElementById(trainID + "-4").innerHTML = ("<span class='delayType'>" + trainMessage +"</span></br>" + document.getElementById(trainID + "-4").innerHTML)
-           }
-           
+            document.getElementById(trainID + "-4").innerHTML = ("<span class='delayType'>" + trainMessage + "</span></br>" + document.getElementById(trainID + "-4").innerHTML)
+          }
+
+        } else {
+          ReplacementTrainData = checkIsReplacementTrain(train)
+          console.log(ReplacementTrainData)
+          if (ReplacementTrainData != false) {
+            var table = document.getElementById("Abfahrtstafel");
+            var row = `<tr id=${trainID}>
+                    <td id=${trainID + "-1a"}><span class='delayType'>${ReplacementTrainData[1]}</span><br>${ReplacementTrainData[0]}</td>
+                    <td id=${trainID + "-1b"}><span class='delayType'>${ReplacementTrainData[3]}</span><br>${ReplacementTrainData[2]}</td>
+                    <td id=${trainID + "-2"} class=${ReplacementTrainData[5]}>${ReplacementTrainData[4]}</td>
+                    <td id=${trainID + "-3"} class=${ReplacementTrainData[7]}>${ReplacementTrainData[6]}</td>
+                    <td id=${trainID + "-4"}><span class='delayType'>${ReplacementTrainData[8]}</span><br>${ReplacementTrainData[9]}</td>
+                    <td id=${trainID + "-5"}>${ReplacementTrainData[10]}</td>
+                    <td id=${trainID + "-6"}>${ReplacementTrainData[11]}</td>
+                    <td id=${trainID + "-7"}>${ReplacementTrainData[12]}</td>
+                </tr>`;
+        table.innerHTML += row;
+      
+
+
+            
+          }
         }
 
 
-        
+
 
 
         // Verarbeite die XML-Daten weiter...
@@ -232,11 +253,11 @@ function getDepatures(evaNumber, date, hour) {
   xhr.open(
     "GET",
     "https://apis.deutschebahn.com/db-api-marketplace/apis/timetables/v1/plan/" +
-      evaNumber +
-      "/" +
-      date +
-      "/" +
-      hour,
+    evaNumber +
+    "/" +
+    date +
+    "/" +
+    hour,
     true
   );
   xhr.setRequestHeader("Accept", "application/json");
@@ -466,28 +487,28 @@ function hideRows(dummy) {
 }
 
 function calculateTimeDifference(time1, time2) {
-    // Zerlege die Zeichenketten in Stunden und Minuten
-    var [hours1, minutes1] = time1.split(':');
-    var [hours2, minutes2] = time2.split(':');
-    
-    // Konvertiere die Stunden und Minuten in Zahlen
-    var totalMinutes1 = parseInt(hours1) * 60 + parseInt(minutes1);
-    var totalMinutes2 = parseInt(hours2) * 60 + parseInt(minutes2);
-    
-    // Berechne die Differenz in Minuten
-    var difference = totalMinutes2 - totalMinutes1;
+  // Zerlege die Zeichenketten in Stunden und Minuten
+  var [hours1, minutes1] = time1.split(':');
+  var [hours2, minutes2] = time2.split(':');
+
+  // Konvertiere die Stunden und Minuten in Zahlen
+  var totalMinutes1 = parseInt(hours1) * 60 + parseInt(minutes1);
+  var totalMinutes2 = parseInt(hours2) * 60 + parseInt(minutes2);
+
+  // Berechne die Differenz in Minuten
+  var difference = totalMinutes2 - totalMinutes1;
 
 
-    if(difference<-100){
-        difference = difference + 1440
-    }
-
-    
-    
-    return difference;
+  if (difference < -100) {
+    difference = difference + 1440
   }
 
-function checkForNewPlatformArrival(train){
+
+
+  return difference;
+}
+
+function checkForNewPlatformArrival(train) {
   console.log("Checking for Platform");
   if (train.getElementsByTagName("ar")[0] == undefined) {
     return 0;
@@ -500,11 +521,11 @@ function checkForNewPlatformArrival(train){
     } else {
       return 0;
     }
-  }  
+  }
 
 }
 
-function checkForNewPlatformDepature(train){
+function checkForNewPlatformDepature(train) {
   console.log("Checking for Platform");
   if (train.getElementsByTagName("dp")[0] == undefined) {
     return 0;
@@ -517,47 +538,47 @@ function checkForNewPlatformDepature(train){
     } else {
       return 0;
     }
-  }  
+  }
 
 }
 
-function checkMessages(train){
+function checkMessages(train) {
   const messages = []
-  const usedCodes  = []
+  const usedCodes = []
 
-  if(train.getElementsByTagName("dp")[0] == undefined){
-    if(train.getElementsByTagName("ar")[0] != undefined){  
-    if(train.getElementsByTagName("ar")[0].getElementsByTagName("m").length > 0){
-      for(var i = 0; i < (train.getElementsByTagName("ar")[0].getElementsByTagName("m").length); i++){
-        code = train.getElementsByTagName("ar")[0].getElementsByTagName("m")[i].getAttribute('c')
-        time = train.getElementsByTagName("ar")[0].getElementsByTagName("m")[i].getAttribute('ts-tts')
-        if(((! (usedCodes.includes(code))) && (code > 0)) && (code < 100)){
-          console.log(code)
-          usedCodes.push(code)
-          console.log(usedCodes)
-          messageText =  "(" + time.substring(9,14) + ") " + getMessagefromCode(code)
-          messages.push(messageText)
-          console.log(messages)
+  if (train.getElementsByTagName("dp")[0] == undefined) {
+    if (train.getElementsByTagName("ar")[0] != undefined) {
+      if (train.getElementsByTagName("ar")[0].getElementsByTagName("m").length > 0) {
+        for (var i = 0; i < (train.getElementsByTagName("ar")[0].getElementsByTagName("m").length); i++) {
+          code = train.getElementsByTagName("ar")[0].getElementsByTagName("m")[i].getAttribute('c')
+          time = train.getElementsByTagName("ar")[0].getElementsByTagName("m")[i].getAttribute('ts-tts')
+          if (((!(usedCodes.includes(code))) && (code > 0)) && (code < 100)) {
+            console.log(code)
+            usedCodes.push(code)
+            console.log(usedCodes)
+            messageText = "(" + time.substring(9, 14) + ") " + getMessagefromCode(code)
+            messages.push(messageText)
+            console.log(messages)
+
+
+          }
+
 
 
         }
-
-
-
       }
     }
-  }
 
   } else {
-    if(train.getElementsByTagName("dp")[0].getElementsByTagName("m").length > 0){
-      for(var i = 0; i < (train.getElementsByTagName("dp")[0].getElementsByTagName("m").length); i++){
+    if (train.getElementsByTagName("dp")[0].getElementsByTagName("m").length > 0) {
+      for (var i = 0; i < (train.getElementsByTagName("dp")[0].getElementsByTagName("m").length); i++) {
         code = train.getElementsByTagName("dp")[0].getElementsByTagName("m")[i].getAttribute('c')
         time = train.getElementsByTagName("dp")[0].getElementsByTagName("m")[i].getAttribute('ts-tts')
-        if(((! (usedCodes.includes(code))) && (code > 0)) && (code < 100)){
+        if (((!(usedCodes.includes(code))) && (code > 0)) && (code < 100)) {
           console.log(code)
           usedCodes.push(code)
           console.log(usedCodes)
-          messageText =  "(" + time.substring(9,14) + ") " + getMessagefromCode(code)
+          messageText = "(" + time.substring(9, 14) + ") " + getMessagefromCode(code)
           messages.push(messageText)
           console.log(messages)
 
@@ -579,15 +600,15 @@ function checkMessages(train){
 }
 
 
-function getMessagefromCode(code){
-      console.log("Code: " + code)
-      console.log(MessageCodes.getElementsByTagName('c')[code].getAttribute('content'))
-      delayText = MessageCodes.getElementsByTagName('c')[code].getAttribute('content')
-      return delayText
+function getMessagefromCode(code) {
+  console.log("Code: " + code)
+  console.log(MessageCodes.getElementsByTagName('c')[code].getAttribute('content'))
+  delayText = MessageCodes.getElementsByTagName('c')[code].getAttribute('content')
+  return delayText
 }
 
 
-function loadMessageText(){
+function loadMessageText() {
   fetch(
     "messages.xml",
     {
@@ -606,5 +627,102 @@ function loadMessageText(){
     })
     .catch(function (error) {
       // Fehlerbehandlung
-    });  
+    });
+}
+
+function checkIsReplacementTrain(train) {
+  if (train.getElementsByTagName("ref")[0] != undefined) {
+    const ReplacementTrainData = []
+
+    category = train.getElementsByTagName("tl")[0].getAttribute("c")
+    trainNumber = train.getElementsByTagName("tl")[0].getAttribute("n")
+    categoryRT = train.getElementsByTagName("ref")[0].getElementsByTagName("tl")[0].getAttribute("c")
+    trainNumberRT = train.getElementsByTagName("ref")[0].getElementsByTagName("tl")[0].getAttribute("n")
+    
+    ReplacementTrainData.push(category,categoryRT,trainNumber,trainNumberRT)
+
+    try {
+      plannedArrivalTime = DBDateToTime(train.getElementsByTagName("ar")[0].getAttribute("pt"))
+      realArrivalTime = DBDateToTime(train.getElementsByTagName("ar")[0].getAttribute("ct"))
+      delayAr = calculateTimeDifference(plannedArrivalTime, realArrivalTime)
+      if (delayAr > 0) {
+        delayAr = "+" + delayAr
+        if(delayAr > 5) {delayClassAr = "delayed"} else {delayClassAr = "slightly_delayed"}
+      } else {if(delayAr == 0){delayClassAr = "onPoint"}else{delayClassAr = "early"}}
+
+
+      verlauf = train.getElementsByTagName("ar")[0].getAttribute("ppth");
+      verlauf = verlauf.split("|");
+      destination = "von " + verlauf[0];
+
+      sortTime = makeDateObject(train.getElementsByTagName("ar")[0].getAttribute("ct"))
+    } catch (error) {
+      realArrivalTime = ""
+      delayAr = ""
+      delayClassAr = ""
+    }
+
+    if (delayAr==""){
+      ReplacementTrainData.push(realArrivalTime,delayClassAr)
+    } else {
+      ReplacementTrainData.push((realArrivalTime + "(" + delayAr +")"),delayClassAr)
+    }
+
+
+    try {
+      plannedDepatureTime = DBDateToTime(train.getElementsByTagName("dp")[0].getAttribute("pt"))
+      realDepatureTime = DBDateToTime(train.getElementsByTagName("dp")[0].getAttribute("ct"))
+      delayDp = calculateTimeDifference(plannedDepatureTime, realDepatureTime)
+      if (delayDp > 0) {
+        delayDp = "+" + delayDp
+        if(delayDp > 5) {delayClassDp = "delayed"} else {delayClassDp = "slightly_delayed"}
+      } else {if(delayDp == 0){delayClassDp = "onPoint"}else{delayClassDp = "early"}}
+
+      verlauf = train.getElementsByTagName("dp")[0].getAttribute("ppth");
+      verlauf = verlauf.split("|");
+      destination = verlauf[verlauf.length - 1];
+
+      sortTime = makeDateObject(train.getElementsByTagName("dp")[0].getAttribute("ct"))
+    } catch (error) {
+      realDepatureTime = ""
+      delayDp = ""
+      delayClassDp = ""
+    }
+
+    if (delayDp==""){
+      ReplacementTrainData.push(realDepatureTime,delayClassDp)
+    } else {
+      ReplacementTrainData.push((realDepatureTime + "(" + delayDp +")"),delayClassDp)
+    }
+
+
+    ReplacementTrainData.push(checkMessages(train).join('<br>'), destination)
+
+
+    try {
+      gleis = train.getElementsByTagName("ar")[0].getAttribute("pp")
+    } catch (error) {
+      gleis = train.getElementsByTagName("dp")[0].getAttribute("pp")
+    }
+    
+    ReplacementTrainData.push(gleis)
+
+
+    ReplacementTrainData.push("")//Platzhalter für Wagenreihung
+
+    ReplacementTrainData.push(sortTime)
+    
+
+    console.log(ReplacementTrainData)
+    console.log("Ersatzzug für " + category + " " + trainNumber + ", Ankunft: " + realArrivalTime + "(" + delayAr + ") - " + delayClassAr)
+    
+    
+    
+    
+    return ReplacementTrainData
+  } else {
+    console.log("kein Ersatzzug")
+    return false
+  }
+
 }
